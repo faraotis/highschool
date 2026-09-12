@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambim | Science</title>
+    <link rel="shortcut icon" href="arquivos/imagens/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="arquivos/style.css">
+    <link rel="stylesheet" href="arquivos/mediaquery.css">
+    <link rel="stylesheet" href="arquivos/topics.css">
+    <!-- <link rel="stylesheet" href="p/biologia/style_biologia.css">
+    <link rel="stylesheet" href="p/biologia/style_matematica.css">
+    <link rel="stylesheet" href="p/biologia/style_quimica.css">
+    <link rel="stylesheet" href="p/biologia/style_fisica.css"> -->
+</head>
+<body>
+    <header id="header">
+        <div>
+            <h1><a href="https://www.bambim.com.br" target="_parent">bambim</a>
+                <span class="material-icons">
+                    science
+                </span>
+            </h1>
+            <div id="menu_and_color">
+                <div id="colorButton" onclick="ColorChange()">
+                    <i class="material-icons color">colorize</i>
+                </div>
+                <div id="menu" onclick="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <menu>
+                <div onclick="closeContent()">
+                    <a href="#matematica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">function</i>
+                        Matemática
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="#fisica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">rocket</i>
+                        Física
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="#quimica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">experiment</i>
+                        Química
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="#biologia" target="_parent">
+                        <i class="material-icons material-symbols-outlined">microbiology</i>
+                        Biologia
+                    </a>
+                </div>
+            </menu>
+        </div>
+        <div>
+            <nav>
+                <div id="navFour" onclick="closeContent()">
+                    <a href="#matematica" target="_parent">
+                        <span id="nome_inteiro">Matemática</span>
+                        <span id="nome_reduzido">Mat</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">function</i>
+                    </a>
+                </div> 
+                <div id="navOne" onclick="closeContent()">
+                    <a href="#fisica" target="_parent">
+                        <span id="nome_inteiro">Física</span>
+                        <span id="nome_reduzido">Fís</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">rocket</i>
+                    </a>
+                </div>
+                <div id="navTwo" onclick="closeContent()">
+                    <a href="#quimica" target="_parent">
+                        <span id="nome_inteiro">Química</span>
+                        <span id="nome_reduzido">Quí</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">experiment</i>
+                    </a>
+                </div>
+                <div id="navThree" onclick="closeContent()">
+                    <a href="#biologia" target="_parent">
+                        <span id="nome_inteiro">Biologia</span>
+                        <span id="nome_reduzido">Bio</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">microbiology</i>
+                    </a>
+                </div> 
+                <div id="box-search" onclick="closeContent()">
+                    <input 
+                        id="search"
+                        class="input-field"
+                        type="text"
+                        placeholder="buscar assunto"
+                    >
+                    <i class="material-icons">search</i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="secPosHeader">
+        <!--imagem CSS-->
+        <div class="aviso">
+            <h1>Seja bem vindo!</h1>
+            <p id="aviso_p_desktop">
+                Plataforma em expansão! <br> 
+                Agumas disciplinas já estão prontas! <br>
+                As demais disciplinas serão liberadas em breve.
+            </p>
+        </div>
+        <div class="aviso">
+            <p id="aviso_p_mobile">
+                Plataforma em expansão! <br> 
+                Agumas disciplinas já estão prontas! As demais disciplinas serão liberadas em breve.
+            </p>
+        </div>
+    </div>
+    <div id="loadcontent">
+        <!-- Load content -->
+    </div>
+    <main>
+        <!-- No results -->
+        <spam id="no_results">
+            <p>Nenhum resultado encontrado.</p>
+        </spam>
+
+        <!-- matematica -->
+        <div class="h1-subject matematica matematica-title">
+            <h1 id="matematica">Matemática</h1>
+        </div>
+        <div class="items matematica">
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item analise-combinatoria">
+                <div></div>
+                <h2 class="item-title">Análise Combinatória</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item estatistica">
+                <div></div>
+                <h2 class="item-title">Estatística</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item exponencial-e-logaritmo">
+                <div></div>
+                <h2 class="item-title">Exponencial e Logaritmo</h2>
+            </a>
+            <a href="" onclick="carregarAula('matematica/funcoes', event)" class="item funcoes">
+                <div></div>
+                <h2 class="item-title">Funções</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item geometria-analitica">
+                <div></div>
+                <h2 class="item-title">Geometria Analítica</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item geometria-espacial">
+                <div></div>
+                <h2 class="item-title">Geometria Espacial</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item geometria-plana">
+                <div></div>
+                <h2 class="item-title">Geometria Plana</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item matrizes">
+                <div></div>
+                <h2 class="item-title">Matrizes</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item modulo">
+                <div></div>
+                <h2 class="item-title">Módulo</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item numeros-complexos">
+                <div></div>
+                <h2 class="item-title">Números Complexos</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item polinomios">
+                <div></div>
+                <h2 class="item-title">Polinômios</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item probabilidade">
+                <div></div>
+                <h2 class="item-title">Probabilidade</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item sequencias-e-progressoes">
+                <div></div>
+                <h2 class="item-title">Sequências e Progressões</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item sistemas-lineares">
+                <div></div>
+                <h2 class="item-title">Sistemas Lineares</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item trigonometria">
+                <div></div>
+                <h2 class="item-title">Trigonometria</h2>
+            </a>
+        </div>
+
+        <!-- fisica -->
+        <div class="h1-subject fisica fisica-title">
+            <h1 id="fisica">Física</h1>
+        </div>
+        <div class="items fisica">
+            <a href="#" onclick="carregarAula('fisica/cinematica', event)" class="item cinematica">
+                <div></div>
+                <h2 class="item-title">Cinemática</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/dinamica', event)" class="item dinamica">
+                <div></div>
+                <h2 class="item-title">Dinâmica</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/termologia', event)" class="item termologia">
+                <div></div>
+                <h2 class="item-title">Termologia</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/eletrodinamica', event)" class="item eletrodinamica">
+                <div></div>
+                <h2 class="item-title">Eletrodinâmica</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/eletrostatica', event)" class="item eletrostatica">
+                <div></div>
+                <h2 class="item-title">Eletrostática</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/estatica', event)" class="item estatica">
+                <div></div>
+                <h2 class="item-title">Estática</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/magnetismo', event)" class="item magnetismo">
+                <div></div>
+                <h2 class="item-title">Magnetismo</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/ondulatoria', event)" class="item ondulatoria">
+                <div></div>
+                <h2 class="item-title">Ondulatória</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/optica', event)" class="item optica">
+                <div></div>
+                <h2 class="item-title">Óptica</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/fisica-moderna', event)" class="item fisica-moderna">
+                <div></div>
+                <h2 class="item-title">Física Moderna</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/fluidos', event)" class="item fluidos">
+                <div></div>
+                <h2 class="item-title">Fluidos</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/gravitacao-universal', event)" class="item gravitacao-universal">
+                <div></div>
+                <h2 class="item-title">Gravitação Universal</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/movimento-circular', event)" class="item movimento-circular">
+                <div></div>
+                <h2 class="item-title">Movimento Circular</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/movimento-harmonico-simples', event)" class="item movimento-harmonico-simples">
+                <div></div>
+                <h2 class="item-title">Movimento Harmônico Simples</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/analise-dimensional', event)" class="item analise-dimensional">
+                <div></div>
+                <h2 class="item-title">Análise Dimensional</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/quantidade-de-movimento', event)" class="item quantidade-de-movimento">
+                <div></div>
+                <h2 class="item-title">Quantidade de Movimento</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica/trabalho-e-energia', event)" class="item trabalho-e-energia">
+                <div></div>
+                <h2 class="item-title">Trabalho e Energia</h2>
+            </a>
+        </div>
+
+        <!-- quimica -->
+        <div class="h1-subject quimica quimica-title">
+            <h1 id="quimica">Química</h1>
+        </div>
+        <div class="items quimica">
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item atomos">
+                <div></div>
+                <h2 class="item-title">Átomos</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item bioquimica">
+                <div></div>
+                <h2 class="item-title">Bioquímica</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item eletroquimica">
+                <div></div>
+                <h2 class="item-title">Eletroquímica</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item estequiometria">
+                <div></div>
+                <h2 class="item-title">Estequiometria</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item equilibrio-quimico">
+                <div></div>
+                <h2 class="item-title">Equilíbrio Químico</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item cinetica-quimica">
+                <div></div>
+                <h2 class="item-title">Cinética Química</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item estudo-da-materia">
+                <div></div>
+                <h2 class="item-title">Estudo da Matéria</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item estudo-dos-gases">
+                <div></div>
+                <h2 class="item-title">Estudo dos Gases</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item funcoes-inorganicas">
+                <div></div>
+                <h2 class="item-title">Funções Inorgânicas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item funcoes-nitrogenadas">
+                <div></div>
+                <h2 class="item-title">Funções Nitrogenadas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item funcoes-oxigenadas">
+                <div></div>
+                <h2 class="item-title">Funções Oxigenadas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item hidrocarbonetos">
+                <div></div>
+                <h2 class="item-title">Hidrocarbonetos</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item isomeria">
+                <div></div>
+                <h2 class="item-title">Isomeria</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item moleculas-e-propriedades">
+                <div></div>
+                <h2 class="item-title">Moléculas e Propriedades</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item outras-funcoes-organicas">
+                <div></div>
+                <h2 class="item-title">Outras Funções Orgânicas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item polimeros">
+                <div></div>
+                <h2 class="item-title">Polímeros</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item propriedades-coligativas">
+                <div></div>
+                <h2 class="item-title">Propriedades Coligativas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item propriedades-dos-compostos-organicos">
+                <div></div>
+                <h2 class="item-title">Propriedades dos Compostos Orgânicos</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item quimica-ambiental">
+                <div></div>
+                <h2 class="item-title">Química Ambiental</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item reacoes-organicas">
+                <div></div>
+                <h2 class="item-title">Reações Orgânicas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item reacoes-quimicas">
+                <div></div>
+                <h2 class="item-title">Reações Químicas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item separacao-de-misturas">
+                <div></div>
+                <h2 class="item-title">Separação de Misturas</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item solucoes">
+                <div></div>
+                <h2 class="item-title">Soluções</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item termoquimica">
+                <div></div>
+                <h2 class="item-title">Termoquímica</h2>
+            </a>
+        </div>
+
+        <!-- biologia -->
+        <div class="h1-subject biologia biologia-title">
+            <h1 id="biologia">Biologia</h1>
+        </div>
+        <div class="items biologia">
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item bioenergetica">
+                <div></div>
+                <h2 class="item-title">Bioenergética</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item biomas-do-brasil">
+                <div></div>
+                <h2 class="item-title">Biomas do Brasil</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item bioquimica-biologia">
+                <div></div>
+                <h2 class="item-title">Bioquímica</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item biotecnologia">
+                <div></div>
+                <h2 class="item-title">Biotecnologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item botanica">
+                <div></div>
+                <h2 class="item-title">Botânica</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item citogenetica">
+                <div></div>
+                <h2 class="item-title">Citogenética</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item citologia">
+                <div></div>
+                <h2 class="item-title">Citologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item classificacao-dos-seres-vivos">
+                <div></div>
+                <h2 class="item-title">Classificação dos Seres Vivos</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item ecologia">
+                <div></div>
+                <h2 class="item-title">Ecologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item embriologia">
+                <div></div>
+                <h2 class="item-title">Embriologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item evolucao">
+                <div></div>
+                <h2 class="item-title">Evolução</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item fisiologia-animal-comparada">
+                <div></div>
+                <h2 class="item-title">Fisiologia Animal Comparada</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item fisiologia-humana">
+                <div></div>
+                <h2 class="item-title">Fisiologia Humana</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item genetica">
+                <div></div>
+                <h2 class="item-title">Genética</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item histologia">
+                <div></div>
+                <h2 class="item-title">Histologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item micologia">
+                <div></div>
+                <h2 class="item-title">Micologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item microbiologia">
+                <div></div>
+                <h2 class="item-title">Microbiologia</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item reproducao">
+                <div></div>
+                <h2 class="item-title">Reprodução</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item saude">
+                <div></div>
+                <h2 class="item-title">Saúde</h2>
+            </a>
+            <a href="" onclick="alert('Conteúdo em breve!')" class="item zoologia">
+                <div></div>
+                <h2 class="item-title">Zoologia</h2>
+            </a>
+        </div>
+
+    </main>
+    <section id="preFooter">
+        <div class="childs-footer">
+            <h2>"Gostou do conteúdo? Compartilha aí!"</h2>
+            <p>Esse site está em constante desenvolvimento. <br> Por favor, envie um feedback em nosso instagram caso veja algo de errado.</p>
+            <a id="a-button" href="https://www.instagram.com/alvs_ismael/" target="_blank">Ir</a>
+            <div id="redes">
+                <div id="p-redes">
+                    <p>Nos siga!</p>
+                </div>
+                <div id="icones-redes">
+                    <a href="https://www.instagram.com/alvs_ismael/" target="_blank">
+                        <img src="arquivos/imagens/redes/icone-insta.png" alt="instagram">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-yt.png" alt="youtube">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-face.png" alt="facebook">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-twi.png" alt="X/twitter">
+                    </a>
+                </div>
+            </div>
+            <div id="displayHora">
+                <!--Elementos nas CSS-->
+            </div>
+            <div id="politicas_e_termos_div">
+                <div>
+                    <a href="p/politicadeprivacidade.html">
+                        políticas de privacidade
+                    </a>
+                </div>
+                <div>
+                    <a href="p/termosdeuso.html">
+                        termos de uso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="childs-footer" id="div-texto">
+                <div>
+                    <abbr title="Hello!">
+                        <h1 id="logo">
+                            <a href="https://www.bambim.com.br" target="_parent">bambim</a>
+                        </h1>
+                    </abbr>
+                    <abbr title="Hello!">
+                        <i class="material-icons">thumb_up</i>
+                    </abbr>
+                </div>
+                <p id="motivational_phrase">
+                    "Never memorize something that you can look up." <br>
+                    ~Albert Einstein
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="bgFooterBottom">
+        <!--Cor nas CSS-->
+    </div>
+    <script src="arquivos/scripts.js"></script>
+</body>
+</html>

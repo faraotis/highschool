@@ -1,0 +1,55 @@
+<article class="aula-container">
+    <main class="topic-container">
+        <a href="#" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+        
+        <div class="h1-subject fisica">
+            <h1>Movimento Harmônico Simples</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>1. Definição e Conceitos Fundamentais</h2>
+            <p>
+                O MHS é um movimento periódico de vai e vem que ocorre sob a ação de uma **força restauradora**, diretamente proporcional à posição e em sentido oposto ao deslocamento (F = -k·x).
+            </p>
+            <p>
+                * <strong>Amplitude (A):</strong> Elongação máxima a partir da posição de equilíbrio (m).<br>
+                * <strong>Período (T):</strong> Tempo necessário para completar uma oscilação completa (s).<br>
+                * <strong>Frequência (f):</strong> Número de oscilações por unidade de tempo (Hz = 1/s). Lembrando que f = 1 / T.
+            </p>
+        </section>
+
+        <section class="topic-card">
+            <h2>2. Equações Horárias do MHS</h2>
+            <p>
+                Projeção de um Movimento Circular Uniforme (MCU) no eixo x, considerando ω como pulsação ou frequência angular (ω = 2π·f = 2π/T):
+            </p>
+            <div class="formula-box">Posição: x(t) = A · cos(ω·t + φ₀)</div><br>
+            <div class="formula-box">Velocidade: v(t) = - A · ω · sin(ω·t + φ₀)</div><br>
+            <div class="formula-box">Aceleração: a(t) = - A · ω² · cos(ω·t + φ₀) = - ω² · x</div>
+            <p class="legenda">
+                * **Nas extremidades (x = ±A):** Posição é máxima, Velocidade é nula (v = 0), Aceleração e Força restauradora são máximas.<br>
+                * **No ponto de equilíbrio (x = 0):** Posição é nula, Velocidade é máxima (v_máx = ω·A), Aceleração e Força são nulas.
+            </p>
+        </section>
+
+        <section class="topic-card">
+            <h2>3. Sistemas Oscilantes Principais</h2>
+            <p><strong>1. Sistema Massa-Mola Ideal:</strong></p>
+            <div class="formula-box">T = 2 · π · √(m / k)</div><br>
+            <p><strong>2. Pêndulo Simples (para pequenas oscilações, θ &lt; 10°):</strong></p>
+            <div class="formula-box">T = 2 · π · √(L / g)</div>
+            <p class="legenda">
+                <strong>Análise Crítica para o ENEM:</strong> O período do pêndulo simples **não depende da massa** do corpo pendurado, dependendo apenas do comprimento do fio (L) e da gravidade local (g). O período do sistema massa-mola **não depende do local/gravidade**.
+            </p>
+        </section>
+
+        <section class="topic-card">
+            <h2>4. Conservação da Energia no MHS</h2>
+            <p>
+                Em sistemas livres de forças dissipativas, a Energia Mecânica Total se conserva e altera continuamente entre Energia Potencial Elástica/Gravitacional e Energia Cinética.
+            </p>
+            <div class="formula-box">E_m = E_c + E_p = (k · A²) / 2</div>
+        </section>
+        <a href="#" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+    </main>
+</article>

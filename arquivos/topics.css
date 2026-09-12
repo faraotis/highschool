@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+/* ======== ordem */
+/* FISICA */
+
+
+.analise-dimensional {
+    order: 1;
+} .cinematica {
+    order: 2;
+} .dinamica {
+    order: 3;
+} .trabalho-e-energia {
+    order: 4;
+} .quantidade-de-movimento {
+    order: 5;
+} .movimento-circular {
+    order: 6;
+} .gravitacao-universal {
+    order: 7;
+} .estatica {
+    order: 8;
+} .fluidos {
+    order: 9;
+} .termologia {
+    order: 10;
+} .ondulatoria {
+    order: 11;
+} .optica {
+    order: 12;
+} .eletrostatica {
+    order: 13;
+} .eletrodinamica {
+    order: 14;
+} .magnetismo {
+    order: 15;
+} .movimento-harmonico-simples {
+    order: 16;
+} .fisica-moderna {
+    order: 17;
+}
+
+/* MATEMATICA */
+
+
+.funcoes{
+    order: 1;
+} .polinomios{
+    order: 2;
+} .exponencial-e-logaritmo{
+    order: 3; 
+} .geometria-plana{
+    order: 4;
+} .trigonometria {
+    order: 5;
+} .geometria-analitica{
+    order: 6;
+} .sistemas-lineares{
+    order: 7;
+} .matrizes{
+    order: 8;
+} .sequencias-e-progressoes{
+    order: 9;
+} .analise-combinatoria{
+    order: 10;
+} .probabilidade{
+    order: 11;
+} .estatistica{
+    order: 12;
+} .geometria-espacial{
+    order: 13;
+} .numeros-complexos{
+    order: 14;
+} .modulo{
+    order: 15;
+}
+
+/* QUIMICA */
+
+
+.estudo-da-materia {
+    order: 1;
+} .atomos {
+    order: 2;
+} .moleculas-e-propriedades {
+    order: 3;
+} .funcoes-inorganicas {
+    order: 4;
+} .reacoes-quimicas {
+    order: 5;
+} .estequiometria {
+    order: 6;
+} .solucoes {
+    order: 7;
+} .estudo-dos-gases {
+    order: 8;
+} .termoquimica {
+    order: 9;
+} .cinetica-quimica {
+    order: 10;
+} .equilibrio-quimico {
+    order: 11;
+} .eletroquimica {
+    order: 12;
+} .propriedades-coligativas {
+    order: 13;
+} .quimica-ambiental {
+    order: 14;
+} .hidrocarbonetos {
+    order: 15;
+} .funcoes-oxigenadas {
+    order: 16;
+} .funcoes-nitrogenadas {
+    order: 17;
+} .isomeria {
+    order: 18;
+} .reacoes-organicas {
+    order: 19;
+} .polimeros {
+    order: 20;
+} .propriedades-dos-compostos-organicos {
+    order: 21;
+} .bioquimica {
+    order: 22;
+} .outras-funcoes-organicas {
+    order: 23;
+} .separacao-de-misturas {
+    order: 24;
+}
+
+/* BIOLOGIA */
+
+
+.citologia {
+    order: 1;
+} .bioquimica-biologia {
+    order: 2;
+} .histologia {
+    order: 3;
+} .genetica {
+    order: 4;
+} .citogenetica {
+    order: 5;
+} .embriologia {
+    order: 6;
+} .fisiologia-humana {
+    order: 7;
+} .fisiologia-animal-comparada {
+    order: 8;
+} .botanica {
+    order: 9;
+} .zoologia {
+    order: 10;
+} .microbiologia {
+    order: 11;
+} .micologia {
+    order: 12;
+} .evolucao {
+    order: 13;
+} .ecologia {
+    order: 14;
+} .biomas-do-brasil {
+    order: 15;
+} .biotecnologia {
+    order: 16;
+} .bioenergetica {
+    order: 17;
+} .saude {
+    order: 18;
+} .reproducao {
+    order: 19;
+} .classificacao-dos-seres-vivos {
+    order: 20;
+}
+
+/* CORES DE CADA MATERIA */
+
+
+.fisica .item, .fisica .item h2 {
+    background-color: var(--fisica);
+    border: 5px solid var(--fisica);
+} .quimica .item, .quimica .item h2 {
+    background-color: var(--quimica);
+    border: 5px solid var(--quimica);
+} .biologia .item, .biologia .item h2 {
+    background-color: var(--biologia);
+    border: 5px solid var(--biologia);
+} .matematica .item, .matematica .item h2 {
+    background-color: var(--matematica);
+    border: 5px solid var(--matematica);
+}
+
+.fisica h1 {
+    background-color: var(--fisica);
+} .quimica h1 {
+    background-color: var(--quimica);
+} .biologia h1 {
+    background-color: var(--biologia);
+} .matematica h1 {
+    background-color: var(--matematica);
+}
+
+/* 
+
+FISICA 
+Imagens de cada tópico 
+
+*/
+
+
+.cinematica {
+    background-image: url('imagens/fisica/cinematica.webp');
+} .dinamica {
+    background-image: url('imagens/fisica/dinamica.webp');
+} .termologia {
+    background-image: url('imagens/fisica/termologia.webp');
+} .eletrodinamica {
+    background-image: url('imagens/fisica/eletrodinamica.webp');
+} .eletrostatica {
+    background-image: url('imagens/fisica/eletrostatica.webp');
+} .estatica {
+    background-image: url('imagens/fisica/estatica.webp');
+} .gravitacao-universal {
+    background-image: url('imagens/fisica/gravitacao-universal.webp');
+} .magnetismo {
+    background-image: url('imagens/fisica/magnetismo.webp');
+} .ondulatoria {
+    background-image: url('imagens/fisica/ondulatoria.webp');
+} .optica {
+    background-image: url('imagens/fisica/optica.webp');
+} .fluidos {
+    background-image: url('imagens/fisica/fluidos.webp');
+}  .fisica-moderna {
+    background-image: url('imagens/fisica/fisica-moderna.webp');
+} .quantidade-de-movimento {
+    background-image: url('imagens/fisica/quantidade-de-movimento.webp');
+} .trabalho-e-energia {
+    background-image: url('imagens/fisica/trabalho-e-energia.webp');
+} .analise-dimensional {
+    background-image: url('imagens/fisica/analise-dimensional.webp');
+} .movimento-circular {
+    background-image: url('imagens/fisica/movimento-circular.webp');
+} .movimento-harmonico-simples {
+    background-image: url('imagens/fisica/movimento-harmonico-simples.webp');
+}
+
+
+/* 
+
+QUIMICA
+Imagens de cada tópico 
+
+*/
+
+.atomos {
+    background-image: url('imagens/quimica/atomos.webp');
+} .bioquimica {
+    background-image: url('imagens/quimica/bioquimica.webp');
+} .eletroquimica {
+    background-image: url('imagens/quimica/eletroquimica.webp');
+} .estequiometria {
+    background-image: url('imagens/quimica/estequiometria.webp');
+} .equilibrio-quimico {
+    background-image: url('imagens/quimica/equilibrio-quimico.webp');
+} .cinetica-quimica {
+    background-image: url('imagens/quimica/cinetica-quimica.webp');
+} .estudo-da-materia {
+    background-image: url('imagens/quimica/estudo-da-materia.webp');
+} .estudo-dos-gases {
+    background-image: url('imagens/quimica/estudo-dos-gases.webp');
+} .funcoes-inorganicas {
+    background-image: url('imagens/quimica/funcoes-inorganicas.webp');
+} .funcoes-nitrogenadas {
+    background-image: url('imagens/quimica/funcoes-nitrogenadas.webp');
+} .funcoes-oxigenadas {
+    background-image: url('imagens/quimica/funcoes-oxigenadas.webp');
+} .hidrocarbonetos {
+    background-image: url('imagens/quimica/hidrocarbonetos.webp');
+} .isomeria {
+    background-image: url('imagens/quimica/isomeria.webp');
+} .moleculas-e-propriedades {
+    background-image: url('imagens/quimica/moleculas-e-propriedades.webp');
+} .outras-funcoes-organicas {
+    background-image: url('imagens/quimica/outras-funcoes-organicas.webp');
+} .polimeros {
+    background-image: url('imagens/quimica/polimeros.webp');
+} .propriedades-coligativas {
+    background-image: url('imagens/quimica/propriedades-coligativas.webp');
+} .propriedades-dos-compostos-organicos {
+    background-image: url('imagens/quimica/propriedades-dos-compostos-organicos.webp');
+} .quimica-ambiental {
+    background-image: url('imagens/quimica/quimica-ambiental.webp');
+} .reacoes-organicas {
+    background-image: url('imagens/quimica/reacoes-organicas.webp');
+} .reacoes-quimicas {
+    background-image: url('imagens/quimica/reacoes-quimicas.webp');
+} .separacao-de-misturas {
+    background-image: url('imagens/quimica/separacao-de-misturas.webp');
+} .solucoes {
+    background-image: url('imagens/quimica/solucoes.webp');  
+} .termoquimica {
+    background-image: url('imagens/quimica/termoquimica.webp');
+}
+
+/* 
+
+BIOLOGIA
+Imagens de cada tópico 
+
+*/
+
+
+
+.bioenergetica {
+    background-image: url('imagens/biologia/bioenergetica.webp');
+} .biomas-do-brasil {
+    background-image: url('imagens/biologia/biomas-do-brasil.webp');
+} .bioquimica-biologia {
+    background-image: url('imagens/biologia/bioquimica-biologia.webp');
+} .biotecnologia {
+    background-image: url('imagens/biologia/biotecnologia.webp');
+} .botanica {
+    background-image: url('imagens/biologia/botanica.webp');
+} .citogenetica {
+    background-image: url('imagens/biologia/citogenetica.webp');
+} .citologia {
+    background-image: url('imagens/biologia/citologia.webp');
+} .classificacao-dos-seres-vivos {
+    background-image: url('imagens/biologia/classificacao-dos-seres-vivos.webp');
+} .ecologia {
+    background-image: url('imagens/biologia/ecologia.webp');
+} .embriologia {
+    background-image: url('imagens/biologia/embriologia.webp');
+} .evolucao {
+    background-image: url('imagens/biologia/evolucao.webp');
+} .fisiologia-animal-comparada {
+    background-image: url('imagens/biologia/fisiologia-animal-comparada.webp');
+} .fisiologia-humana {
+    background-image: url('imagens/biologia/fisiologia-humana.webp');
+} .genetica {
+    background-image: url('imagens/biologia/genetica.webp');
+} .histologia {
+    background-image: url('imagens/biologia/histologia.webp');
+} .micologia {
+    background-image: url('imagens/biologia/micologia.webp');
+} .microbiologia {
+    background-image: url('imagens/biologia/microbiologia.webp');
+} .reproducao {
+    background-image: url('imagens/biologia/reproducao.webp');
+} .saude {
+    background-image: url('imagens/biologia/saude.webp');
+} .zoologia {
+    background-image: url('imagens/biologia/zoologia.webp');
+}
+
+/* 
+
+MATEMATICA
+Imagens de cada tópico 
+
+*/
+
+
+.analise-combinatoria {
+    background-image: url('imagens/matematica/analise-combinatoria.webp');
+} .estatistica {
+    background-image: url('imagens/matematica/estatistica.webp');
+} .exponencial-e-logaritmo {
+    background-image: url('imagens/matematica/exponencial-e-logaritmo.webp');
+} .funcoes {
+    background-image: url('imagens/matematica/funcoes.webp');
+} .geometria-analitica {
+    background-image: url('imagens/matematica/geometria-analitica.webp');
+} .geometria-espacial {
+    background-image: url('imagens/matematica/geometria-espacial.webp');
+} .geometria-plana {
+    background-image: url('imagens/matematica/geometria-plana.webp');
+} .matrizes {
+    background-image: url('imagens/matematica/matrizes.webp');
+} .modulo {
+    background-image: url('imagens/matematica/modulo.webp');
+} .numeros-complexos {
+    background-image: url('imagens/matematica/numeros-complexos.webp');
+} .polinomios {
+    background-image: url('imagens/matematica/polinomios.webp');
+} .probabilidade {
+    background-image: url('imagens/matematica/probabilidade.webp');
+} .sequencias-e-progressoes {
+    background-image: url('imagens/matematica/sequencias-e-progressoes.webp');
+} .sistemas-lineares {
+    background-image: url('imagens/matematica/sistemas-lineares.webp');
+} .trigonometria {
+    background-image: url('imagens/matematica/trigonometria.webp');
+}
+
+/* AJAX */
+
+
+.legenda {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Estilos para o container da aula */
+.aula-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+} .aula-container span {
+    font-weight: bold;
+} .topic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Botão voltar */
+.back-btn {
+    display: inline-block;
+    color: var(--titles-topic-card);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 5px;
+} .back-btn:hover {
+    text-decoration: underline;
+}
+
+.h1-subject h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.topic-card {
+    text-align: left;
+    padding: 20px 25px;
+}
+
+.topic-card h2 {
+    color: var(--titles-topic-card);
+    font-size: 2em;
+    margin: 0 auto 50px auto;
+    text-align: center;
+} .topic-card h3 {
+    margin: 0 auto 30px auto;
+    font-size: 1rem;
+} .topic-card p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.formula-box {
+    display: inline-block;
+    border: 1px solid var(--p-topic-card);
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--p-topic-card);
+    margin-top: 8px;
+}
+
+section.topic-card p {
+    color: var(--p-topic-card);
+    font-size: 1.2em;
+}

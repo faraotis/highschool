@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.topic-container h1 {
+    background-color: var(--matematica);
+} .back-btn {
+    color: var(--matematica);
+} .h1-subject h1 {
+    color: white;
+    background-color: var(--matematica);
+} .topic-card {
+    background-color: var(--background_footer);
+} .topic-card h2 {
+    color: var(--matematica);
+} .topic-card h3 {
+    color: var(--header);
+} .formula-box {
+    background-color: #ffffff;
+    border: 1px solid #bce0fd;
+}

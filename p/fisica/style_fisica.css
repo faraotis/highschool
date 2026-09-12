@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.topic-container h1 {
+    background-color: var(--fisica);
+} .back-btn a {
+    color: var(--fisica);
+} .h1-subject h1 {
+    color: white;
+    background-color: var(--fisica);
+} .topic-card {
+    background-color: var(--background_footer);
+} .topic-card h2 {
+    color: var(--fisica);
+} .topic-card h3 {
+    color: var(--header);
+} .formula-box {
+    background-color: #ffffff;
+    border: 1px solid #bce0fd;
+}
+

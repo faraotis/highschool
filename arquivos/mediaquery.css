@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+/* .miniNav  */
+/* #navOne #nome_inteiro, #navTwo #nome_inteiro, #navThree  #nome_inteiro, #navFour  #nome_inteiro, #navFive  #nome_inteiro, #navSix  #nome_inteiro, #navSeven  #nome_inteiro{display: none;}#navOne  */
+
+#nome_inteiro{display: none;}
+#nome_reduzido {display: none;}
+#nome_icon {display: block;}
+
+@media screen and (min-width: 450px) {
+    .item {
+        width: 80vw;
+    } nav {
+        padding-right: 10px;
+    } #colorButton {
+        display: flex;
+    } 
+} @media screen and (min-width: 550px) {
+    #navTwo {display: block;}
+    .item {
+        min-width: 240px;
+        width: 40vw;
+    }
+} @media screen and (min-width: 660px) {
+    #nome_reduzido {display: block;}
+    nav {
+        gap: 10px;
+    } nav a {
+        padding: 0px 10px;
+        font-size: 1.2em;
+    }
+    .item {
+        min-width: 240px;
+        width: 40vw;
+    }
+} @media screen and (min-width: 770px) {
+    #nome_reduzido {display: block;}
+    .item {
+        min-width: 240px;
+        width: 40vw;
+    } :root {
+        --foto: url('imagens/background/astronomy.webp');
+    } .secPosHeader {
+        display: flex;
+        flex-direction: row;
+        height: 430px;
+        background: black var(--foto) no-repeat center scroll;
+        background-size: cover;
+        padding: 30px 10px;
+        margin: 0px 0px 30px 0px;
+    } .secPosHeader > div {
+        /* border: 1px solid red; */
+        width: 30%;
+    } .secPosHeader > div:first-child {
+        height: fit-content;
+        width: 70%;
+    } .aviso {
+        margin: 70px 20px 0px auto;
+        padding: 20px;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+        font-size: clamp(10px, 2vw, 20px);
+    } .aviso p {
+        text-align: left;
+        letter-spacing: 1px;
+    } .aviso h1 {
+        text-align: left;
+        margin-bottom: 7px;
+        font-size: clamp(40px, 8vw, 48px); 
+    } .aviso #aviso_p_mobile {
+        display: none;
+    }  .aviso #aviso_p_desktop {
+        display: flex;
+    }
+} @media screen and (min-width: 861px) {
+    #nome_icon {display: none;}
+    #nome_inteiro {display: block;}
+    #nome_reduzido {display: none;}
+
+    .item {
+        min-width: 240px;
+        width: 30vw;
+    }
+} @media screen and (min-width:900px) {
+    #menu {
+        display: none;
+    } menu {
+        display: none;
+    } #navFive {display: block;}
+    .item {
+        min-width: 240px;
+        width: 30vw;
+    }
+} @media screen and (min-width: 942px) {
+    .item {
+        min-width: 240px;
+        width: 30vw;
+        max-width: 370px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #nome_icon {display: block;}
+    .secPosHeader {
+        height: 430px;
+        max-width: 1350px;
+        margin: auto auto 30px auto;
+    }
+}
