@@ -55,7 +55,7 @@
     } .secPosHeader > div:first-child {
         height: fit-content;
         width: 70%;
-    } .aviso {
+    } .visit-card {
         margin: 70px 20px 0px auto;
         padding: 20px;
         background-color: transparent;
@@ -63,16 +63,16 @@
         text-align: center;
         text-shadow: 1px 1px 2px black;
         font-size: clamp(10px, 2vw, 20px);
-    } .aviso p {
+    } .visit-card p {
         text-align: left;
         letter-spacing: 1px;
-    } .aviso h1 {
+    } .visit-card h1 {
         text-align: left;
         margin: 7px 0px 0px 0px;
         font-size: clamp(40px, 8vw, 48px); 
-    } .aviso #aviso_p_mobile {
+    } .visit-card #visit-card_p_mobile {
         display: none;
-    }  .aviso #aviso_p_desktop {
+    }  .visit-card #visit-card_p_desktop {
         display: flex;
     }
 } @media screen and (min-width: 861px) {

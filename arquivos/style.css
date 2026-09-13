@@ -15,7 +15,7 @@
     --header: #000;
     --icons: #FB4A9D;
     --color-text-footer: #000;
-    --aviso: #b1427670;
+    --visit-card: #b1427670;
     --foto: url('imagens/background/astronomy_mobile.webp');
     --button: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
     --prefooter: black; 
@@ -214,19 +214,19 @@ nav {
     height: 70%;
 } .secPosHeader div:last-child {
     height: 30%;
-} .aviso {
+} .visit-card {
     font-size: clamp(10px, 3vw, 30px); 
     margin: 5px auto 0px auto;
     padding: 20px 20px 0px 20px;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 2px black;
-} .aviso #aviso_p_mobile {
+} .visit-card #visit-card_p_mobile {
     display: flex;
-} .aviso #aviso_p_desktop {
+} .visit-card #visit-card_p_desktop {
     display: none;
-} .aviso h1 {
-    font-size: clamp(40px, 8vw, 48px);
+} .visit-card h1 {
+    font-size: clamp(50px, 10vw, 72px);
     margin-top: 40px;
     font-variant: small-caps;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
