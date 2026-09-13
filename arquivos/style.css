@@ -226,8 +226,9 @@ nav {
 } .aviso #aviso_p_desktop {
     display: none;
 } .aviso h1 {
-    font-size: clamp(40px, 8vw, 48px); 
-    text-transform: uppercase;
+    font-size: clamp(40px, 8vw, 48px);
+    margin-top: 40px;
+    font-variant: small-caps;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

@@ -68,7 +68,7 @@
         letter-spacing: 1px;
     } .aviso h1 {
         text-align: left;
-        margin-bottom: 7px;
+        margin: 7px 0px 0px 0px;
         font-size: clamp(40px, 8vw, 48px); 
     } .aviso #aviso_p_mobile {
         display: none;
