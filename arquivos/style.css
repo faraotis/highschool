@@ -233,16 +233,31 @@ nav {
 }
 
 #no_results {
-    display: none;
-    background-color: var(--aviso);
-    margin: auto;
-    color: var(--icons);
-    letter-spacing: 1px;
-    font: normal normal 1.2em sans-serif;
+    margin: 50px auto 20px auto;
     width: 90%;
+}
+
+#no_results, #no_results_back {
+    display: none;
+    background-color: var(--nav);
+    color: var(--background_footer);
+    letter-spacing: 1px;
+    font: normal normal 1.5em sans-serif;
+    text-transform: uppercase;
     border-radius: 50px;
     padding: 20px;
     text-align: center;
+} #no_results_back {
+    margin: 0px auto 80px auto;
+}  #no_results_back {
+    text-decoration: none;
+    color: var(--background_footer);
+    border: 2px solid transparent;
+} #no_results_back:hover {
+    text-decoration: underline;
+    background-color: var(--background_footer);
+    color: var(--nav);
+    border: 2px solid var(--nav);
 }
 
 #loadcontent {

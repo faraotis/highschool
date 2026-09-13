@@ -26,6 +26,7 @@ inputSearch.addEventListener('input', (event) => {
     const value = formatString(event.target.value)
     const items = document.querySelectorAll('.items .item')
     const noResults = document.getElementById('no_results')
+    const noResultsBack = document.getElementById('no_results_back')
 
     let hasResults = false
 
@@ -44,8 +45,10 @@ inputSearch.addEventListener('input', (event) => {
 
     if (hasResults) {
         noResults.style.display = 'none'
+        noResultsBack.style.display = 'none'
     } else {
         noResults.style.display = 'block'
+        noResultsBack.style.display = 'block'
     }
 
     // Esconder os títulos
