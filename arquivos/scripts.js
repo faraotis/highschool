@@ -82,6 +82,21 @@ inputSearch.addEventListener('input', (event) => {
     })
 })
 
+inputSearch.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+
+        const noResults = document.getElementById('no_results');
+        const firstVisibleItem = document.querySelector('.item:not([style*="display: none"])')
+
+        if (noResults && noResults.style.display !== 'none') {
+            noResults.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        } else if (firstVisibleItem) {
+            firstVisibleItem.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+    }
+})
+
 function formatString(value) {
     return value
         .toLowerCase()
@@ -89,6 +104,19 @@ function formatString(value) {
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
 }
+
+var lupaSearch = document.querySelector('#search-lupa')
+var boxSearch = document.querySelector('#box-search')
+
+boxSearch.addEventListener('click', function(event) {
+    lupaSearch.style.color = 'transparent'
+})
+
+document.addEventListener('click', function(event) {
+    if (!boxSearch.contains(event.target)) {
+        lupaSearch.style.color = 'black'
+    }
+})
 
 
 // colors

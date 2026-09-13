@@ -145,24 +145,18 @@ nav {
     display: flex;
     align-items: center;
     min-width: max-content;
-}
-
-#box-search input {
+} #box-search input {
     height: 80%;
     width: 100%;
     padding-left: 10px;
     background-color: var(--icons);
     border: 1px solid var(--header);
     border-radius: 10px;
-}
-
-#box-search input::placeholder {
+} #box-search input::placeholder {
     font-size: 1.1em;
     letter-spacing: 2px;
     color: var(--header);
-}
-
-#box-search i {
+} #box-search i {
     margin-left: -27px;
     color: var(--header);
     text-shadow: none;
