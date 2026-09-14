@@ -68,6 +68,8 @@
     display: none;
 } .colorButtonMenu {
     margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
 } .colorButtonMenu div {
     padding: 20px 18px;
 } .colorButtonMenu i {
