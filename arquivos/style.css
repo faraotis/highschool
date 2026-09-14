@@ -66,6 +66,15 @@
 #colorButton {
     cursor: pointer;
     display: none;
+} .colorButtonMenu {
+    margin-bottom: 20px;
+} .colorButtonMenu div {
+    padding: 20px 18px;
+} .colorButtonMenu i {
+    margin: 20px 0px;
+} .colorButtonMenu:hover {
+    color: var(--header);
+    background-color: var(--icons);
 }
 
 body {
@@ -178,7 +187,7 @@ nav {
 } menu {
     position: absolute;
     transform: translate(calc(100vw - 315px), -68%);
-    height: 300px;
+    height: fit-content;
     width: fit-content;
     background-color: var(--header);
     display: flex;
@@ -194,7 +203,14 @@ nav {
 } menu a:hover {
     text-decoration: underline;
     color: #b3b3b3;
-}
+} #politcs_and_terms-menu {
+    margin: 40px auto 20px auto;
+    font-size: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+} 
 
 .secPosHeader {
     display: flex;
