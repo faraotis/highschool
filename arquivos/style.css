@@ -189,6 +189,7 @@ nav {
 } menu {
     position: absolute;
     transform: translate(calc(100vw - 315px), -68%);
+    transition: transform 0.3s ease;
     height: fit-content;
     width: fit-content;
     background-color: var(--header);
@@ -212,7 +213,10 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-} 
+}  menu.open {
+    transform: translate(calc(100vw - 315px), 68%);
+    transition: transform 0.3s ease;
+}
 
 .secPosHeader {
     display: flex;

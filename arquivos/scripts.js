@@ -1,17 +1,17 @@
 let divMenu = document.querySelector('#menu')
 let navMenu = document.querySelector('menu')
-var cont = 1
 const inputSearch = document.getElementById('search')
 
 function openMenu() {
-    cont++
-    navMenu.style.transitionDuration = '0.3s'
-    if(cont%2 == 0) {
-        navMenu.style.transform = 'translate(calc(100vw - 315px), 68%)'
-    } else {
-        navMenu.style.transform = 'translate(calc(100vw - 315px), -68%)'
-    }
+    navMenu.classList.toggle('open')
 }
+document.addEventListener('click', (event) => {
+    if (navMenu.classList.contains('open')) {
+        if (!navMenu.contains(event.target) && !divMenu.contains(event.target)) {
+            navMenu.classList.remove('open')
+        }
+    }
+})
 
 //PESQUISAR
 
@@ -118,8 +118,9 @@ document.addEventListener('click', function(event) {
     }
 })
 
-
 // colors
+
+
 var body = document.getElementsByTagName('body')[0]
 var contColor = 0
 var totalPaletas = 2 // Quantidade de paletas
@@ -137,47 +138,42 @@ function ColorChange() {
         body.classList.remove("paleta" + contColor)
     }
 }
+// Carregar aula
+
 
 function closeContent() {
-    // Clear the content
-    document.getElementById("loadcontent").innerHTML = '';
+    document.getElementById("loadcontent").innerHTML = ''
     Main.style.display = 'grid'
 }
 
 function carregarAula(caminhoAula, event) {
-    // Evita que o link tente mudar de página de forma tradicional
-    if (event) event.preventDefault();
+    if (event) event.preventDefault()
 
-    const container = document.getElementById('loadcontent');
-    
-    // Feedback visual enquanto o arquivo é carregado
-    container.innerHTML = '<p style="padding: 20px; text-align: center;">Carregando...</p>';
+    const container = document.getElementById('loadcontent')
+    container.innerHTML = '<p style="padding: 20px; text-align: center;">Carregando...</p>'
 
-    // Faz a requisição para buscar o HTML da aula (ex: p/fisica/analise-dimensional.html)
     fetch(`p/${caminhoAula}.html`)
         .then(response => {
         if (!response.ok) {
-            throw new Error('Erro ao carregar o arquivo');
+            throw new Error('Erro ao carregar o arquivo')
         }
-        return response.text();
+        return response.text()
         })
         .then(html => {
-        // Injeta o conteúdo puro retornado do arquivo dentro do seu div
-        container.innerHTML = html;
+        container.innerHTML = html
         
-        // Rola a tela suavemente até a área do novo conteúdo
-        container.scrollIntoView({ behavior: 'smooth' });
+        container.scrollIntoView({ behavior: 'smooth' })
         })
         .catch(error => {
-        container.innerHTML = '<p style="padding: 20px; text-align: center;">Erro 404: Conteúdo não encontrado.</p>';
-        console.error(error);
+        container.innerHTML = '<p style="padding: 20px; text-align: center;">Erro 404: Conteúdo não encontrado.</p>'
+        console.error(error)
         });
 }
 
 function fecharAula(event) {
     if (event) event.preventDefault();
-    const container = document.getElementById('loadcontent');
+    const container = document.getElementById('loadcontent')
     if (container) {
-        container.innerHTML = ''; // Limpa o conteúdo da aula e volta para os cards principais
+        container.innerHTML = ''
     }
 }
