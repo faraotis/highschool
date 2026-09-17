@@ -1,0 +1,279 @@
+<article class="aula-container">
+    <main class="topic-container">
+        <a href="../../" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+        
+        <div class="h1-subject matematica">
+            <h1>Trigonometria</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>O que é Trigonometria?</h2>
+            <p>
+                É a parte da matemática que estuda as propriedades dos ângulos, dos triângulos e de suas semelhanças.
+            </p>
+            <h2>
+                Semelhança de triângulos
+            </h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="480" height="320" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+
+                    <!-- Triângulo 1 -->
+                    <text x="20" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Triângulo 1</text>
+                    <g transform="translate(10, 0)">
+                    <polygon points="28,56 28,210 140,210" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
+                    <text x="2" y="135" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">A<tspan font-size="12" dy="3">1</tspan></text>
+                    <text x="65" y="230" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">B<tspan font-size="12" dy="3">1</tspan></text>
+                    <text x="95" y="135" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">C<tspan font-size="12" dy="3">1</tspan></text>
+                    </g>
+
+                    <!-- Triângulo 2 -->
+                    <text x="190" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Triângulo 2</text>
+                    <g transform="translate(190, 30)">
+                    <polygon points="24,48 24,180 120,180" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
+                    <text x="-7" y="125" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">A<tspan font-size="12" dy="3">2</tspan></text>
+                    <text x="58" y="200" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">B<tspan font-size="12" dy="3">2</tspan></text>
+                    <text x="78" y="110" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">C<tspan font-size="12" dy="3">2</tspan></text>
+                    </g>
+                    
+                    <!-- Triângulo 3 -->
+                    <text x="340" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Triângulo 3</text>
+                    <g transform="translate(350, 60)">
+                    <polygon points="20,40 20,150 100,150" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
+                    <text x="-5" y="105" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">A<tspan font-size="12" dy="3">3</tspan></text>
+                    <text x="50" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">B<tspan font-size="12" dy="3">3</tspan></text>
+                    <text x="70" y="90" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">C<tspan font-size="12" dy="3">3</tspan></text>
+                    </g>
+                </svg>
+            </div>
+            <p>
+                Todos esses triângulos são iguais. São idênticos, a menos por um fator de escala. 
+            </p>
+            <p>
+                Se a gente aumentar o tamanho dos triângulos 2 e 3, eles ficam exatamente igual ao triângulo 1.
+            </p>
+            <p>
+                Isso é chamado <span>Semelhança de triângulos.</span>
+            </p>
+            <p>
+                Devido à isso, estão corretas as seguintes razões:
+            </p>
+        </section>
+        
+        <section class="topic-card">
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+                    <!-- Linha 1: A1/B1 = A2/B2 = A3/B3 -->
+                    <g transform="translate(110, 30)">
+                    <!-- A1/B1 -->
+                    <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">1</tspan></text>
+                    <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                    <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">1</tspan></text>
+                    
+                    <!-- = -->
+                    <text x="50" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- A2/B2 -->
+                    <g transform="translate(80, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">2</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">2</tspan></text>
+                    </g>
+                    
+                    <!-- = -->
+                    <text x="130" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- A3/B3 -->
+                    <g transform="translate(160, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">3</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">3</tspan></text>
+                    </g>
+                    </g>
+
+                    <!-- Linha 2: B1/C1 = B2/C2 = B3/C3 -->
+                    <g transform="translate(110, 110)">
+                    <!-- B1/C1 -->
+                    <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">1</tspan></text>
+                    <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                    <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">1</tspan></text>
+                    
+                    <!-- = -->
+                    <text x="50" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- B2/C2 -->
+                    <g transform="translate(80, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">2</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">2</tspan></text>
+                    </g>
+                    
+                    <!-- = -->
+                    <text x="130" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- B3/C3 -->
+                    <g transform="translate(160, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">B<tspan font-size="14" dy="4">3</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">3</tspan></text>
+                    </g>
+                    </g>
+
+                    <!-- Linha 3: A1/C1 = A2/C2 = A3/C3 -->
+                    <g transform="translate(110, 190)">
+                    <!-- A1/C1 -->
+                    <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">1</tspan></text>
+                    <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                    <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">1</tspan></text>
+                    
+                    <!-- = -->
+                    <text x="50" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- A2/C2 -->
+                    <g transform="translate(80, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">2</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">2</tspan></text>
+                    </g>
+                    
+                    <!-- = -->
+                    <text x="130" y="37" font-family="Arial" font-size="20" font-weight="bold" fill="#000000">=</text>
+                    
+                    <!-- A3/C3 -->
+                    <g transform="translate(160, 0)">
+                        <text x="15" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">A<tspan font-size="14" dy="4">3</tspan></text>
+                        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="2" />
+                        <text x="15" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">C<tspan font-size="14" dy="4">3</tspan></text>
+                    </g>
+                    </g>
+                </svg>
+            </div>
+
+            <p>
+                Por causa dessa semelhança, foram criadas as funções SENO, COSSENO e TANGENTE, que veremos mais à frente.
+            </p>
+
+            <h2>TRIGONOMETRIA NO TRIÂNGULO RETÂNGULO</h2>
+            <p>
+                Os triângulos retângulos são usados por um motivo: Eles já possuem um ângulo em comum, o ângulo de 90º.
+            </p>
+            <p>
+                Isso é bom porque, em um triângulo, a soma dos 3 ângulos internos dão obrigatoriamente 180º
+            </p>
+            <p>
+                Então, se um já está definido em 90º, você só precisa escolher mais um ângulo X que o terceiro já é definido automaticamente.
+            </p>
+            <p>
+                Então, se você tem dois triângulos retângulos, e conhece um de seus ângulos, o terceiro ângulo você também vai saber, porque é só fazer a conta:
+            </p>
+
+            <p>
+                <span>X = 180 - 90 - θ</span>
+            </p>
+            <p>
+                Em que X é o ângulo desconhecido e θ é o ângulo que você conhece.
+            </p>
+            <h2>SENO, COSSENO e TANGENTE.</h2>
+            <p>
+                Vimos que aquela semelhança parece ser bem útil. Então, decidimos dar um nome á cada uma delas. Sendo:
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+
+                    <g style="transform: translate(300px, 40px);">
+                        <polygon points="10,0 10,70 110,70" fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="round" />
+                        <path d="M 90,70 A 15,15 0 0,1 95,60" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <text x="80" y="66" font-family="Arial" font-size="12" font-weight="bold" fill="#000000">θ</text>
+
+                        <text x="-7" y="42" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">a</text>
+                        <text x="48" y="90" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">b</text>
+                        <text x="58" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">c</text>
+
+                    </g>
+
+                    <g transform="translate(30, 30)">
+                        <text x="0" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Sen(θ) =</text>
+                        <g transform="translate(70, -5)">
+                            <text x="10" y="18" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">a</text>
+                            <line x1="0" y1="24" x2="20" y2="24" stroke="#000000" stroke-width="2" />
+                            <text x="10" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                        </g>
+                    </g>
+                    <g transform="translate(30, 85)">
+                        <text x="0" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Cos(θ) =</text>
+                        <g transform="translate(70, -5)">
+                            <text x="10" y="18" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">b</text>
+                            <line x1="0" y1="24" x2="20" y2="24" stroke="#000000" stroke-width="2" />
+                            <text x="10" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                        </g>
+                    </g>
+                    <g transform="translate(30, 145)">
+                        <text x="0" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Tg(θ) =</text>
+                        <text x="100" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">=</text>
+                        <g transform="translate(120, -10)">
+                            <text x="35" y="20" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">Sen(θ)</text>
+                            <line x1="0" y1="28" x2="70" y2="28" stroke="#000000" stroke-width="2" />
+                            <text x="35" y="45" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">Cos(θ)</text>
+                        </g>
+                        <g transform="translate(70, -5)">
+                            <text x="10" y="18" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">a</text>
+                            <line x1="0" y1="24" x2="20" y2="24" stroke="#000000" stroke-width="2" />
+                            <text x="10" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">b</text>
+                        </g>
+                    </g>
+                    <g transform="translate(30, 215)">
+                        <text x="0" y="48" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">Tg(θ) =</text>
+                        <g transform="translate(60, 13)">
+                            <text x="35" y="20" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">Sen(θ)</text>
+                            <line x1="0" y1="28" x2="70" y2="28" stroke="#000000" stroke-width="2" />
+                            <text x="35" y="45" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">Cos(θ)</text>
+                        </g>
+                        <g transform="translate(155, 0)">
+                            <text x="10" y="15" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">a</text>
+                            <line x1="0" y1="20" x2="20" y2="20" stroke="#000000" stroke-width="1.5" />
+                            <text x="10" y="34" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                            <line x1="-5" y1="42" x2="25" y2="42" stroke="#000000" stroke-width="2" />
+                            <text x="10" y="58" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">b</text>
+                            <line x1="0" y1="63" x2="20" y2="63" stroke="#000000" stroke-width="1.5" />
+                            <text x="10" y="77" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                        </g>
+                        <text x="135" y="48" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">=</text>
+                        <text x="182" y="48" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">=</text>
+                        <g transform="translate(195, 25)">
+                            
+                            <text x="8" y="14" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">a</text>
+                            <line x1="0" y1="18" x2="16" y2="18" stroke="#000000" stroke-width="1.5" />
+                            <text x="8" y="32" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                            <line x1="2" y1="34" x2="14" y2="22" stroke="#cc0000" stroke-width="2" />
+                            
+                            <text x="24" y="18" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">.</text>
+                            <g transform="translate(32, 0)">
+                            <text x="8" y="14" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">c</text>
+                            <line x1="2" y1="16" x2="14" y2="4" stroke="#cc0000" stroke-width="2" />
+                            <line x1="0" y1="18" x2="16" y2="18" stroke="#000000" stroke-width="1.5" />
+                            <text x="8" y="32" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">b</text>
+                            <g transform="translate(0, 0)">
+                                <text x="20" y="23" font-family="Arial" font-size="16" font-weight="bold" fill="#000000">=</text>
+                                <text x="40" y="13" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">a</text>
+                                <line x1="30" y1="18" x2="50" y2="18" stroke="#000000" stroke-width="1.5" />
+                                <text x="40" y="32" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc" text-anchor="middle">b</text>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <p>
+                Lembre-se: <span>Essas Funções Trigonométricas Sen, Cos e Tg são propriedades do ângulo!</span> O ângulo é quem carrega essas propriedades.
+            </p>
+            <p>
+                Se eu alterar o tamanho do triângulo, posso não alterar Sen, Cos e Tg - por causa da semelhança.
+                Porém, se eu alterar o ângulo, o Sen, Cos e Tg serão alterados, porque, ao fazer isso, as medidas de lado mudam sem manter a proporção.
+            </p>
+        </section>
+        <section class="topic-card">
+            <p style="color: var(--thumb); background-color: transparent; border: 2px dashed var(--nav); padding: 5px;">PÁGINA EM EM CONSTRUÇÃO</p>
+            <p class="legenda"></p>
+        </section>
+        <a href="../../" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+    </main>
+</article>

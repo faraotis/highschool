@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página não encontrada</title>
+    <link rel="shortcut icon" href="arquivos/imagens/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="arquivos/style.css">
+    <link rel="stylesheet" href="arquivos/mediaquery.css">
+    <style>
+        main {
+            margin: 65px auto;
+        } .box-url-not-found {
+            font-family: Arial, sans-serif;
+            background: var(--backgroundColor);
+            border: 1px solid var(--thumb);
+            border-radius: 4px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        } .error-box {
+            background-color: var(--backgroundColor);
+            border: 1px solid var(--icons);
+            color: var(--icons);
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 3px;
+            font-weight: bold;
+        } .url-display {
+            background-color: var(--backgroundColor);
+            padding: 5px 10px;
+            font-family: monospace;
+            color: var(--icons);
+            display: inline-block;
+            margin: 10px 0;
+        } #voltar-url-not-found{
+            width: 100%;
+            display: flex;
+        } #voltar-url-not-found a {
+            color: var(--backgroundColor);
+            background-color: var(--thumb);
+            border: 1px solid transparent;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            margin: auto;
+        } #voltar-url-not-found a:hover {
+            background-color: var(--backgroundColor);
+            color: var(--thumb);
+            border: 1px solid var(--thumb);
+            transition: 0.3s;
+
+        }
+    </style>
+    </head>
+<body>
+    <header id="header">
+        <div>
+            <h1><a href="https://www.bambim.com.br" target="_parent">bambim</a>
+                <span class="material-icons">
+                    science
+                </span>
+            </h1>
+            <div id="menu_and_color">
+                <div id="colorButton" onclick="ColorChange()">
+                    <i class="material-icons color">colorize</i>
+                </div>
+                <div id="menu" onclick="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <menu>
+                <div class="colorButtonMenu" onclick="ColorChange()">
+                    <i class="material-icons color">colorize</i> 
+                    <div>Mudar tema</div>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="https://bambim.com.br/#matematica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">function</i>
+                        Matemática
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="https://bambim.com.br/#fisica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">rocket</i>
+                        Física
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="https://bambim.com.br/#quimica" target="_parent">
+                        <i class="material-icons material-symbols-outlined">experiment</i>
+                        Química
+                    </a>
+                </div>
+                <div onclick="closeContent()">
+                    <a href="https://bambim.com.br/#biologia" target="_parent">
+                        <i class="material-icons material-symbols-outlined">microbiology</i>
+                        Biologia
+                    </a>
+                </div>
+                <div id="politcs_and_terms-menu">
+                    <a target="_parent" href="p/politicadeprivacidade.html">
+                        políticas de privacidade
+                    </a>
+                    <a target="_parent" href="p/termosdeuso.html">
+                        termos de uso
+                    </a>
+                </div>
+            </menu>
+        </div>
+        <div>
+            <nav>
+                <div id="navFour" onclick="closeContent()">
+                    <a href="https://bambim.com.br/#matematica" target="_parent">
+                        <span id="nome_inteiro">Matemática</span>
+                        <span id="nome_reduzido">Mat</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">function</i>
+                    </a>
+                </div> 
+                <div id="navOne" onclick="closeContent()">
+                    <a href="https://bambim.com.br/#fisica" target="_parent">
+                        <span id="nome_inteiro">Física</span>
+                        <span id="nome_reduzido">Fís</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">rocket</i>
+                    </a>
+                </div>
+                <div id="navTwo" onclick="closeContent()">
+                    <a href="https://bambim.com.br/#quimica" target="_parent">
+                        <span id="nome_inteiro">Química</span>
+                        <span id="nome_reduzido">Quí</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">experiment</i>
+                    </a>
+                </div>
+                <div id="navThree" onclick="closeContent()">
+                    <a href="https://bambim.com.br/#biologia" target="_parent">
+                        <span id="nome_inteiro">Biologia</span>
+                        <span id="nome_reduzido">Bio</span>
+                        <i id="nome_icon" class="material-icons material-symbols-outlined color">microbiology</i>
+                    </a>
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="box-url-not-found">
+            <div class="error-box">
+                Não encontrado
+            </div>
+            <p>
+                A página abaixo não foi encontrada:
+            </p>
+            <div class="url-display" id="wrong-url"></div>
+            <p id="voltar-url-not-found">
+                <a href="/">Ir para o início</a>
+            </p>
+        </div>
+    </main>
+    <section id="preFooter">
+        <div class="childs-footer">
+            <h2>"Gostou do conteúdo? Compartilha aí!"</h2>
+            <p>Esse site está em constante desenvolvimento. <br> Por favor, envie um feedback em nosso instagram caso veja algo de errado.</p>
+            <a id="a-button" href="https://www.instagram.com/alvs_ismael/" target="_blank">Ir</a>
+            <div id="redes">
+                <div id="p-redes">
+                    <p>Nos siga!</p>
+                </div>
+                <div id="icones-redes">
+                    <a href="https://www.instagram.com/alvs_ismael/" target="_blank">
+                        <img src="arquivos/imagens/redes/icone-insta.png" alt="instagram">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-yt.png" alt="youtube">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-face.png" alt="facebook">
+                    </a>
+                    <a onclick="alert('No momento, apenas o Instagram está disponível!')">
+                        <img src="arquivos/imagens/redes/icone-twi.png" alt="X/twitter">
+                    </a>
+                </div>
+            </div>
+            <div id="displayHora">
+                <!--Elementos nas CSS-->
+            </div>
+            <div id="politicas_e_termos_div">
+                <div>
+                    <a href="p/politicadeprivacidade.html">
+                        políticas de privacidade
+                    </a>
+                </div>
+                <div>
+                    <a href="p/termosdeuso.html">
+                        termos de uso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div class="childs-footer" id="div-texto">
+                <div>
+                    <abbr title="Hello!">
+                        <h1 id="logo">
+                            <a href="https://www.bambim.com.br" target="_parent">bambim</a>
+                        </h1>
+                    </abbr>
+                    <abbr title="Hello!">
+                        <i class="material-icons">thumb_up</i>
+                    </abbr>
+                </div>
+                <p id="motivational_phrase">
+                    "Never memorize something that you can look up." <br>
+                    ~Albert Einstein
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('wrong-url').innerText = window.location.href;
+    </script>
+    <script src="arquivos/scripts.js"></script>
+</body>
+</html>

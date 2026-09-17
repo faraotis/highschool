@@ -1,0 +1,130 @@
+<article class="aula-container">
+    <main class="topic-container">
+        <a href="../../" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+        
+        <div class="h1-subject matematica">
+            <h1>Funções</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>O que é uma função?</h2>
+            <p>
+                Uma função matemática é uma relação entre dois conjuntos numéricos.
+            </p>
+            <p>
+                Ela é como uma máquina, em que você joga um número dentro, e ela te devolve outro.
+            </p>
+            <p>
+                Por exemplo:
+            </p>
+            <p>
+                <span>x² = y</span>
+            </p>
+            <p>
+                Elevar ao quadrado é uma função matemática. Você coloca um número no lugar de <span>x</span> e ela te devolve um <span>y</span> correspondente.
+            </p>
+            <p>
+                Para uma expressão ser caracterizada como uma função, ela deve associar esses dois valores - X e Y - e retornar apenas <span>um único valor de Y para cada X</span>.
+            </p>
+            <p>
+                <span>Y</span> é a imagem da função. Ou seja, é o valor que vai ser "gerado" com base na variável <span>X</span> que você colocar.
+            </p>
+            <p>
+                Por exemplo, considere a função <span>y = 2x + 3</span> <br>
+                Para x = 5, temos: <br>
+                <span>y = 2 . 5 + 3</span> <br>
+                <span>y = 10 + 3</span> <br>
+                <span>y = 13</span> <br>
+                Ou seja, <span>Y</span> é o valor que resultou conforme o <span>X</span> que escolhemos. <span>Y</span> é a <span>imagem</span> da função.
+            </p>
+        </section>
+
+        <section class="topic-card">
+            <h2>Função Afim</h2>
+            <p>
+                Função afim - ou função polinomial do 1⁰ grau - é uma expressão do tipo: <span class="formula-box">y = ax + b</span>
+            </p>
+            <p>
+                O gráfico da função afim é uma reta.
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="300" height="220" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+                    <!-- Eixo X -->
+                    <line x1="30" y1="170" x2="270" y2="170" stroke="#000000" stroke-width="2" />
+                    <polygon points="270,165 280,170 270,175" fill="#000000" />
+                    <text x="270" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">x</text>
+
+                    <!-- Eixo Y -->
+                    <line x1="80" y1="200" x2="80" y2="20" stroke="#000000" stroke-width="2" />
+                    <polygon points="75,20 80,10 85,20" fill="#000000" />
+                    <text x="60" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">y</text>
+
+                    <!-- Origem (0,0) -->
+                    <text x="65" y="185" font-family="Arial" font-size="12" fill="#666666">0</text>
+
+                    <!-- Reta da Função Afim (Azul) -->
+                    <line x1="40" y1="190" x2="250" y2="35" stroke="#0066cc" stroke-width="3" stroke-linecap="round" />
+
+                    <!-- Ponto b (Corte no eixo Y) -->
+                    <circle cx="80" y1="160" cy="160" r="4" fill="#0066cc" />
+                    <text x="90" y="165" font-family="Arial" font-size="13" font-weight="bold" fill="#0066cc">b</text>
+                    
+                    <!-- Rótulo da função -->
+                    <text x="150" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc">y = ax + b</text>
+                </svg>
+            </div>
+            <p>
+                <span>y</span> é a imagem da função <br>
+                <span>a</span> é o <span>coeficiente angular</span>, é o quanto a imagem varia a cada x, é a <span>taxa de inclinação da reta</span>
+            </p>
+            <p>
+                <span>x</span> é a variável <br>
+                <span>b</span> é o coeficiente linear. Ele é onde o gráfico da função corta o eixo vertical.
+            </p>
+
+        </section>
+
+        <section class="topic-card">
+            <h2>Função Quadrática</h2>
+            <p>
+                Função quadrática - ou função polinomial do 2⁰ grau - é uma função do tipo: <span class="formula-box">y = ax² + bx + c</span>
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="300" height="220" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+                    <!-- Eixo X -->
+                    <line x1="30" y1="170" x2="270" y2="170" stroke="#000000" stroke-width="2" />
+                    <polygon points="270,165 280,170 270,175" fill="#000000" />
+                    <text x="270" y="195" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">x</text>
+
+                    <!-- Eixo Y -->
+                    <line x1="150" y1="200" x2="150" y2="20" stroke="#000000" stroke-width="2" />
+                    <polygon points="145,20 150,10 155,20" fill="#000000" />
+                    <text x="130" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#000000">y</text>
+
+                    <!-- Curva da Parábola y = x² (Touch exato no ponto 0,0) -->
+                    <path d="M 50,30 Q 150,310 250,30" fill="none" stroke="#0066cc" stroke-width="3" stroke-linecap="round" />
+
+                    <!-- Vértice na Origem (0,0) -->
+                    <circle cx="150" cy="170" r="4" fill="#0066cc" />
+                    <text x="128" y="190" font-family="Arial" font-size="12" font-weight="bold" fill="#0066cc">(0,0)</text>
+
+                    <!-- Rótulo da Função -->
+                    <text x="180" y="20" font-family="Arial" font-size="14" font-weight="bold" fill="#0066cc">y = ax² + bx + c</text>
+                </svg>
+            </div>
+            <p>
+                O gráfico de uma função quadrática é uma <span>parábola</span>
+            </p>
+            <p>
+                Algumas coisas importantes:
+            </p>
+            <p>
+                Se você quiser saber onde o gráfico da função(essa curva azul no desenho acima) corta o eixo x - quando a imagem é 0 -, ou seja, o eixo horizontal, basta usar a famosa fórmula de <strong>Bhaskara</strong>:
+            </p>
+
+            <p style="color: var(--thumb); background-color: transparent; border: 2px dashed var(--nav); padding: 5px;">PÁGINA EM EM CONSTRUÇÃO</p>
+            <p class="legenda"></p>
+        </section>
+        <a href="../../" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+    </main>
+</article>

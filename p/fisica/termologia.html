@@ -1,0 +1,89 @@
+<article class="aula-container">
+    <main class="topic-container">
+        <a href="#" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+        
+        <div class="h1-subject fisica">
+            <h1>Termologia</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>1. Escalas Termométricas</h2>
+            <p>A temperatura mede o grau de agitação média das moléculas do corpo.</p>
+            <div class="formula-box">C / 5 = (F - 32) / 9 = (K - 273) / 5</div>
+            <p class="legenda">Zero Absoluto = 0 K = -273,15 °C. A variação de 1 °C é equivalente à variação de 1 K (ΔC = ΔK).</p>
+        </section>
+
+        <section class="topic-card">
+            <h2>2. Dilatação Térmica dos Sólidos</h2>
+            <p>Ocorre pela expansão da distância média entre os átomos devido ao aumento da agitação térmica.</p>
+            <div class="formula-box">Linear: ΔL = L₀ · α · ΔT</div><br>
+            <div class="formula-box">Superficial: ΔA = A₀ · β · ΔT (onde β = 2α)</div><br>
+            <div class="formula-box">Volumétrica: ΔV = V₀ · γ · ΔT (onde γ = 3α)</div>
+        </section>
+
+        <section class="topic-card">
+            <h2>3. Dilatação Anômala da Água</h2>
+            <p>
+                Entre 0 °C e 4 °C, a água se contrai ao ser aquecida (aumenta sua densidade). A 4 °C a água atinge sua **densidade máxima**. Isso garante a preservação da vida aquática no fundo de lagos congelados.
+            </p>
+        </section>
+        <div class="h1-subject fisica">
+            <h1>Calorimetria e Mudanças de Fase</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>1. Calor Sensível e Capacidade Térmica</h2>
+            <p>Calor transferido que gera alteração de temperatura sem alterar o estado físico da matéria.</p>
+            <div class="formula-box">Q = m · c · ΔT</div><br>
+            <div class="formula-box">C_térmica = Q / ΔT = m · c</div>
+            <p class="legenda"><strong>Calor específico da água:</strong> c_água = 1 cal/(g·°C) = 4186 J/(kg·K). Substâncias com alto c demoram mais para aquecer e esfriar.</p>
+        </section>
+
+        <section class="topic-card">
+            <h2>2. Calor Latente e Mudança de Fase</h2>
+            <p>Calor trocado exclusivamente para romper ou formar ligações intermoleculares durante a mudança de estado físico (Temperatura permanece constante).</p>
+            <div class="formula-box">Q = m · L</div>
+        </section>
+
+        <section class="topic-card">
+            <h2>3. Trocas de Calor e Propagação do Calor</h2>
+            <p>Em sistemas termicamente isolados: <strong>Σ Q_trocados = 0</strong> (Q_recebido + Q_cedido = 0).</p>
+            <p>
+                * <strong>Condução:</strong> Transferência molécula a molécula em sólidos.<br>
+                * <strong>Convecção:</strong> Movimento de fluidos por diferença de densidade (correntes quentes sobem, frias descem).<br>
+                * <strong>Irradiação:</strong> Propagação por ondas eletromagnéticas (infravermelho). Única que ocorre no vácuo.
+            </p>
+        </section>
+        <div class="h1-subject fisica">
+            <h1>Termodinâmica</h1>
+        </div>
+
+        <section class="topic-card">
+            <h2>1. Equação de Estado e Trabalho de um Gás</h2>
+            <div class="formula-box">P · V = n · R · T (Clapeyron)</div><br>
+            <div class="formula-box">W = P · ΔV (Trabalho sob Pressão Constante)</div>
+            <p class="legenda">Se o gás expande (ΔV > 0), o gás realiza trabalho (W > 0). Se comprimido (ΔV < 0), o gás recebe trabalho (W < 0).</p>
+        </section>
+
+        <section class="topic-card">
+            <h2>2. Primeira Lei da Termodinâmica</h2>
+            <p>Princípio da conservação de energia aplicado aos sistemas gasosos.</p>
+            <div class="formula-box">ΔU = Q - W</div><br>
+            <div class="formula-box">ΔU = (3/2) · n · R · ΔT (Para gás monoatômico)</div>
+            <p class="legenda">
+                * **Isotérmica:** ΔT = 0 &rarr; ΔU = 0 &rarr; Q = W<br>
+                * **Isovolumétrica (Isocórica):** ΔV = 0 &rarr; W = 0 &rarr; ΔU = Q<br>
+                * **Adiabática:** Q = 0 &rarr; ΔU = - W
+            </p>
+        </section>
+
+        <section class="topic-card">
+            <h2>3. Segunda Lei da Termodinâmica e Ciclo de Carnot</h2>
+            <p>O calor flui espontaneamente do corpo mais quente para o mais frio. Nenhuma máquina térmica pode converter 100% do calor recebido em trabalho.</p>
+            <div class="formula-box">η = W / Q_quente = 1 - (Q_fria / Q_quente)</div><br>
+            <div class="formula-box">η_carnot = 1 - (T_fria / T_quente) [T em Kelvin!]</div>
+        </section>
+
+        <a href="#" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
+    </main>
+</article>
