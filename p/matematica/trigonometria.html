@@ -261,7 +261,11 @@
             <p>
                 Vimos que aquela semelhança parece ser bem útil. Então, decidimos dar um nome á cada uma delas. Sendo:
             </p>
-
+            <p>
+                <span>SENO:</span> cateto oposto ao ângulo dividido pela hipotenusa <br>
+                <span>COSSENO:</span> cateto adjascente ao ângulo dividido pela hipotenusa <br>
+                <span>TANGENTE:</span> cateto adjascente dividido pela hipotenusa
+            </p>
             <div style="text-align: center; margin: 20px 0;">
                 <svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
 
@@ -544,7 +548,7 @@
                         <text x="100" y="195" class="label">EQUILÁTERO</text>
                     </g>
                 </svg>
-                <p>
+                <p style="font-size: 0.9em;">
                     <span>OBS:</span> escolhi o lado valendo 2 só para facilitar a conta, mas qualquer valor daria o mesmo resultado no final, já que são todos iguais.
                 </p>
                 <h3>
@@ -610,13 +614,25 @@
                             <mfrac>
                                 <msqrt><mn>b²</mn></msqrt>
                             </mfrac>
-                        </math></span>
+                        </math>
                         = 
                         <math style="font-weight: bold;">
                             <mfrac>
                                 <msqrt><mn>3</mn></msqrt>
                             </mfrac>
-                        </math></span> <br>
+                        </math>
+                    </span> <br>
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>b</mn>
+                        </mfrac>
+                    </math>
+                    = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math> <br>
                     descobriremos que o tamanho dessa reta vertical que traçamos vale
                     <math style="font-weight: bold;">
                         <mfrac>
@@ -673,10 +689,259 @@
                         <text x="100" y="200" class="label">EQUILÁTERO DIVIDIDO</text>
                     </g>
                 </svg>
+                <h3>Passo 3:</h3>
+                <p>
+                    Agora, basta aplicarmos a definição de <span>SEN</span> <span>COS</span> e <span>TAN</span>:
+                </p> <br>
+                <p>
+                    Sen(30) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Sen(60) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Cos(30) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Cos(60) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Tan(30) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    x
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                            <mn>3</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Tan(60) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                            <mn>1</mn>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                </p>
+                <h3>Passo 4:</h3>
+                <p>
+                    Como em um triângulo isósceles 2 lados são iguais, e um dos ângulos é o de 90⁰, então os outros 2 ângulos tem que ser iguais também.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+                    <style>
+                        .label { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .angle-text { font-family: monospace, sans-serif; font-size: 12px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .side-text { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                    </style>
 
+                    <!-- TRIÂNGULO ISÓSCELES RETÂNGULO CENTRALIZADO -->
+                    <g transform="translate(250, 40)">
+                        <!-- Polígono do Triângulo -->
+                        <polygon points="30,20 30,160 170,160" 
+                                fill="#ffffff" 
+                                stroke="#000000" 
+                                stroke-width="3" 
+                                stroke-linejoin="round" />
 
+                        <!-- Indicador do Ângulo Reto (90°) -->
+                        <polyline points="30,142 48,142 48,160" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <circle cx="39" cy="151" r="1.5" fill="#000000" />
 
+                        <!-- Arcos dos Ângulos de 45° -->
+                        <!-- Ângulo Superior (45°) -->
+                        <path d="M 30,50 A 30 30 0 0 0 51.21,41.21" fill="none" stroke="#000000" stroke-width="1.5" />
+                        
+                        <!-- Ângulo Inferior Direito (45°) -->
+                        <path d="M 148.79,138.79 A 30 30 0 0 0 140,160" fill="none" stroke="#000000" stroke-width="1.5" />
 
+                        <!-- Indicações dos Ângulos -->
+                        <text x="46" y="65" class="angle-text">45°</text>
+                        <text x="132" y="148" class="angle-text">45°</text>
+
+                        <!-- Medida dos Lados Iguais (1) -->
+                        <text x="15" y="95" class="side-text">1</text>
+                        <text x="100" y="180" class="side-text">1</text>
+
+                        <!-- Legenda -->
+                        <text x="100" y="205" class="label">ISÓSCELES RETÂNGULO</text>
+                    </g>
+                </svg>
+                <p style="font-size: 0.9em;">
+                    <span>OBS:</span> novamente, escolhi o lado valendo 1 só para facilitar a conta, mas qualquer valor dos lados, daria o mesmo resultado no final, já que 2 lados são iguais, o terceiro também manterá a mesma proporção, independente do tamanho dos lados iguais.
+                </p>
+                <p>
+                    Novamente aplicando pitágoras: <br>
+                    <span>c² = 1² + 1²</span> <br>
+                    <span>c² = 1 + 1</span> <br>
+                    <span>c² = 2</span> <br>
+                    <span>
+                        <math style="font-weight: bold;">
+                            <mfrac>
+                                <msqrt><mn>c²</mn></msqrt>
+                            </mfrac>
+                        </math>
+                        = 
+                        <math style="font-weight: bold;">
+                            <mfrac>
+                                <msqrt><mn>2</mn></msqrt>
+                            </mfrac>
+                        </math>
+                    </span> <br>
+                    <math style="font-weight: bold;">
+                            <mfrac>
+                                <mn>c</mn>
+                            </mfrac>
+                        </math>
+                        = 
+                        <math style="font-weight: bold;">
+                            <mfrac>
+                                <msqrt><mn>2</mn></msqrt>
+                            </mfrac>
+                        </math> <br>
+                    descobriremos que a hipotenusa vale
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                </p>
+                <h3>Passo 5:</h3>
+                <p>
+                    Agora, basta aplicarmos a definição de <span>SEN</span> <span>COS</span> e <span>TAN</span>:
+                </p> <br>
+                <p>
+                    Sen(45) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    x
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>2</mn></msqrt>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>2</mn></msqrt>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Cos(45) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    x
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>2</mn></msqrt>
+                            <msqrt><mn>2</mn></msqrt>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>2</mn></msqrt>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                    Tan(45) = 
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>1</mn>
+                        </mfrac>
+                    </math>
+                    =
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <mn>1</mn>
+                        </mfrac>
+                    </math>
+                    <br>
+                    <br>
+                </p>
+                <p>
+                    <span>Parabéns! Agora você sabe montar a tabela sem ter que ficar decorando, porque você aprendeu!</span>
+                </p>
             </div>
         </section>
 
