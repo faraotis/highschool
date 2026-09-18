@@ -1,18 +1,106 @@
+<head>
+    <link rel="stylesheet" href="../../arquivos/topics.css">
+    <link rel="stylesheet" href="../../arquivos/style.css">
+</head>
 <article class="aula-container">
     <main class="topic-container">
         <a href="../../" onclick="fecharAula(event)" class="back-btn">&larr; Voltar para o Início</a>
-        
         <div class="h1-subject matematica">
             <h1>Trigonometria</h1>
         </div>
-
         <section class="topic-card">
             <h2>O que é Trigonometria?</h2>
             <p>
                 É a parte da matemática que estuda as propriedades dos ângulos, dos triângulos e de suas semelhanças.
             </p>
+        </section>
+        <section class="topic-card">
+            <h2>Teorema de Pitágoras</h2>
+            <p>
+                O teorema de pitágoras é uma forma de descobrir os lados de um triângulo, desde que você já saiba 2 deles.
+            </p>
+            <p>
+                Mas tem um porém: <span>o Teorema de Pitágoras só é válido para Triângulos Retângulos</span>, ou seja, um dos ângulos deve ser de 90⁰.
+            </p>
+            <p class="formula-box">
+                <span>c² = a² + b²</span>
+            </p>
+            <p>
+                A hipotenusa ao quadrado é igual à soma dos quadrados dos catetos.
+            </p>
+            <p>
+                <span>Catetos</span> são os lados próximos ao ângulo de 90⁰.
+                <span>Hipotenusa</span> é o lado oposto ao ângulo de 90⁰.
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="450" height="420" viewBox="0 0 450 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+                    <polygon points="150,150 150,240 270,240" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+
+                    <path d="M 150,228 L 162,228 L 162,240" fill="none" stroke="#000000" stroke-width="1.5" />
+                    <circle cx="156" cy="234" r="1.5" fill="#000000" />
+
+                    <text x="138" y="200" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="end">a = 3</text>
+                    <text x="210" y="260" font-family="Arial" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">b = 4</text>
+                    <text x="218" y="185" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">c = ?</text>
+
+                    <text x="225" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        c² = a² + b²
+                    </text>
+                    <text x="225" y="348" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        c² = 3² + 4²
+                    </text>
+                    <text x="224" y="371" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        c² = 9 + 16
+                    </text>
+                    <text x="209" y="394" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        c² = 25
+                    </text>
+                    <text x="201" y="417" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        c = 5
+                    </text>
+                </svg>
+            </div>
+            <p>
+                <span>a</span> e <span>b</span> são os <span>catetos</span>, enquanto <span>c</span> é a <span>hipotenusa</span>
+            </p>
+            <p>
+                Isso também vale para descobrir um dos catetos. Ex:
+            </p>
+            <p>
+                <span>13² = 5² + b²</span>
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="450" height="420" viewBox="0 0 450 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
+                    <polygon points="150,150 150,240 270,240" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+
+                    <path d="M 150,228 L 162,228 L 162,240" fill="none" stroke="#000000" stroke-width="1.5" />
+                    <circle cx="156" cy="234" r="1.5" fill="#000000" />
+
+                    <text x="138" y="200" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="end">a = 5</text>
+                    <text x="210" y="260" font-family="Arial" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">b = ?</text>
+                    <text x="218" y="185" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">c = 13</text>
+
+                    <text x="225" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        13² = 5² + b²
+                    </text>
+                    <text x="225" y="348" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        169 = 25 + b²
+                    </text>
+                    <text x="224" y="371" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        169 - 25 = b²
+                    </text>
+                    <text x="209" y="394" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        144 = b²
+                    </text>
+                    <text x="201" y="417" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
+                        12 = b
+                    </text>
+                </svg>
+            </div>
+        </section>
+        <section class="topic-card">
             <h2>
-                Semelhança de triângulos
+                Semelhança de Triângulos
             </h2>
             <div style="text-align: center; margin: 20px 0;">
                 <svg width="480" height="320" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
@@ -58,7 +146,6 @@
                 Devido à isso, estão corretas as seguintes razões:
             </p>
         </section>
-        
         <section class="topic-card">
             <div style="text-align: center; margin: 20px 0;">
                 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
@@ -147,12 +234,10 @@
                     </g>
                 </svg>
             </div>
-
             <p>
                 Por causa dessa semelhança, foram criadas as funções SENO, COSSENO e TANGENTE, que veremos mais à frente.
             </p>
-
-            <h2>TRIGONOMETRIA NO TRIÂNGULO RETÂNGULO</h2>
+            <h2>Trigonometria no Triângulo Retângulo</h2>
             <p>
                 Os triângulos retângulos são usados por um motivo: Eles já possuem um ângulo em comum, o ângulo de 90º.
             </p>
@@ -172,7 +257,7 @@
             <p>
                 Em que X é o ângulo desconhecido e θ é o ângulo que você conhece.
             </p>
-            <h2>SENO, COSSENO e TANGENTE.</h2>
+            <h2>Seno, Cosseno e Tangente.</h2>
             <p>
                 Vimos que aquela semelhança parece ser bem útil. Então, decidimos dar um nome á cada uma delas. Sendo:
             </p>
@@ -271,89 +356,334 @@
             </p>
         </section>
         <section class="topic-card">
-            <h2>TEOREMA DE PITÁGORAS</h2>
+            <h2>Ângulos Notáveis</h2>
             <p>
-                O teorema de pitágoras é uma forma de descobrir os lados de um triângulo, desde que você já saiba 2 deles.
-            </p>
-            <p>
-                Mas tem um porém: <span>o Teorema de Pitágoras só é válido para Triângulos Retângulos</span>, ou seja, um dos ângulos deve ser de 90⁰.
-            </p>
-            <p class="formula-box">
-                <span>c² = a² + b²</span>
+                Ângulos Notáveis são ângulos que aparecem muito frequentemente na Matemática e na Física. Por isso é bom a gente se familiarizar-se com eles.
             </p>
             <p>
-                A hipotenusa ao quadrado é igual à soma dos quadrados dos catetos.
+                <h3>30⁰, 45⁰ e 60⁰</h3>
             </p>
-            <p>
-                <span>Catetos</span> são os lados próximos ao ângulo de 90⁰.
-                <span>Hipotenusa</span> é o lado oposto ao ângulo de 90⁰.
-            </p>
-            <div style="text-align: center; margin: 20px 0;">
-                <svg width="450" height="420" viewBox="0 0 450 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
-                    <polygon points="150,150 150,240 270,240" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
-
-                    <path d="M 150,228 L 162,228 L 162,240" fill="none" stroke="#000000" stroke-width="1.5" />
-                    <circle cx="156" cy="234" r="1.5" fill="#000000" />
-
-                    <text x="138" y="200" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="end">a = 3</text>
-                    <text x="210" y="260" font-family="Arial" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">b = 4</text>
-                    <text x="218" y="185" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">c = ?</text>
-
-                    <text x="225" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        c² = a² + b²
-                    </text>
-                    <text x="225" y="348" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        c² = 3² + 4²
-                    </text>
-                    <text x="224" y="371" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        c² = 9 + 16
-                    </text>
-                    <text x="209" y="394" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        c² = 25
-                    </text>
-                    <text x="201" y="417" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        c = 5
-                    </text>
+            <table id="table-angulos-notaveis">
+                <thead>
+                    <tr>
+                        <th colspan="4">Tabela dos Ângulos Notáveis</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th></th>
+                    <th>30⁰</th>
+                    <th>45⁰</th>
+                    <th>60⁰</th>
+                </tr>
+                <tr>
+                    <th>SEN</th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>2</mn></msqrt>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>3</mn></msqrt>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                </tr>
+                <tr>
+                    <th>COS</th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>3</mn></msqrt>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>2</mn></msqrt>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <mn>1</mn>
+                                <mn>2</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                </tr>
+                <tr>
+                    <th>TAN</th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>3</mn></msqrt>
+                                <mn>3</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <mn>1</mn>
+                            </mfrac>
+                        </math>
+                    </th>
+                    <th>
+                        <math>
+                            <mfrac>
+                                <msqrt><mn>3</mn></msqrt>
+                            </mfrac>
+                        </math>
+                    </th>
+                </tr>
+            </table>
+            <div class="passo-a-passo">
+                <h3>
+                    Siga o passo a passo abaixo para aprender essa tabela!
+                </h3>
+                <p>
+                    Tudo que você precisa para construí-la é de um triângulo <span>equilátero</span> e de um triângulo <span>isósceles</span>.
+                </p>
+                <p>
+                    <span>Triângulo equilátero:</span> todos os lados são iguais <br>
+                    <span>Triângulo isósceles:</span> tem 2 lados iguais
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+                    <style>
+                        .label { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .subtext { font-family: monospace, sans-serif; font-size: 12px; fill: #555555; text-anchor: middle; }
+                    </style>
+                    <!-- TRIÂNGULO EQUILÁTERO -->
+                    <g transform="translate(110, 40)">
+                        <polygon points="100,20 20,158.56 180,158.56"
+                                fill="#ffffff"
+                                stroke="#000000"
+                                stroke-width="3"
+                                stroke-linejoin="round" />
+            
+                        <text x="100" y="195" class="label">EQUILÁTERO</text>
+                        <text x="100" y="215" class="subtext">(3 lados iguais)</text>
+                    </g>
+                    <!-- TRIÂNGULO ISÓSCELES -->
+                    <g transform="translate(390, 40)">
+                        <polygon points="100,20 40,158.56 160,158.56"
+                                fill="#ffffff"
+                                stroke="#000000"
+                                stroke-width="3"
+                                stroke-linejoin="round" />
+            
+                        <text x="100" y="195" class="label">ISÓSCELES</text>
+                        <text x="100" y="215" class="subtext">(2 lados iguais)</text>
+                    </g>
                 </svg>
-            </div>
-            <p>
-                <span>a</span> e <span>b</span> são os <span>catetos</span>, enquanto <span>c</span> é a <span>hipotenusa</span>
-            </p>
-            <p>
-                Isso também vale para descobrir um dos catetos. Ex:
-            </p>
-            <p>
-                <span>13² = 5² + b²</span>
-            </p>
-            <div style="text-align: center; margin: 20px 0;">
-                <svg width="450" height="420" viewBox="0 0 450 420" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; border-radius: 8px;">
-                    <polygon points="150,150 150,240 270,240" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+                <p>
+                    Só lembrando: <span>a soma dos ângulos internos de qualquer triângulo é 180⁰</span>
+                </p>
+                <h3>Passo 1:</h3>
+                <p>
+                    Se um triângulo equilátero possui todos os lados iguais, também são iguais seus ângulos internos e seus lados.
+                    <br>
+                    Então,<span> cada ângulo interno vale 60⁰</span>. Porque: 180⁰ / 3 = 60⁰
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+                    <style>
+                        .label { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .subtext { font-family: monospace, sans-serif; font-size: 12px; fill: #555555; text-anchor: middle; }
+                        .angle-text { font-family: monospace, sans-serif; font-size: 13px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .side-text { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                    </style>
 
-                    <path d="M 150,228 L 162,228 L 162,240" fill="none" stroke="#000000" stroke-width="1.5" />
-                    <circle cx="156" cy="234" r="1.5" fill="#000000" />
+                    <!-- TRIÂNGULO EQUILÁTERO CENTRALIZADO -->
+                    <g transform="translate(250, 40)">
+                        <!-- Polígono do Triângulo -->
+                        <polygon points="100,20 20,158.56 180,158.56" 
+                                fill="#ffffff" 
+                                stroke="#000000" 
+                                stroke-width="3" 
+                                stroke-linejoin="round" />
 
-                    <text x="138" y="200" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="end">a = 5</text>
-                    <text x="210" y="260" font-family="Arial" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">b = ?</text>
-                    <text x="218" y="185" font-family="Arial" font-size="15" font-weight="bold" fill="#0066cc" text-anchor="middle">c = 13</text>
+                        <!-- Arcos dos Ângulos Internos (raio = 30) -->
+                        <!-- Arco do Vértice Superior -->
+                        <path d="M 85,45.98 A 30 30 0 0 0 115,45.98" fill="none" stroke="#000000" stroke-width="2" />
+                        
+                        <!-- Arco do Vértice Inferior Esquerdo -->
+                        <path d="M 50,158.56 A 30 30 0 0 0 35,132.58" fill="none" stroke="#000000" stroke-width="2" />
+                        
+                        <!-- Arco do Vértice Inferior Direito -->
+                        <path d="M 165,132.58 A 30 30 0 0 0 150,158.56" fill="none" stroke="#000000" stroke-width="2" />
 
-                    <text x="225" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        13² = 5² + b²
-                    </text>
-                    <text x="225" y="348" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        169 = 25 + b²
-                    </text>
-                    <text x="224" y="371" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        169 - 25 = b²
-                    </text>
-                    <text x="209" y="394" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        144 = b²
-                    </text>
-                    <text x="201" y="417" font-family="Arial" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle">
-                        12 = b
-                    </text>
+                        <!-- Indicações dos Ângulos (60°) -->
+                        <text x="100" y="65" class="angle-text">60°</text>
+                        <text x="58" y="146" class="angle-text">60°</text>
+                        <text x="142" y="146" class="angle-text">60°</text>
+
+                        <!-- Medida dos Lados (2) -->
+                        <text x="45" y="80" class="side-text">2</text>
+                        <text x="155" y="80" class="side-text">2</text>
+                        <text x="100" y="175" class="side-text">2</text>
+
+                        <!-- Legenda -->
+                        <text x="100" y="195" class="label">EQUILÁTERO</text>
+                    </g>
                 </svg>
+                <p>
+                    <span>OBS:</span> escolhi o lado valendo 2 só para facilitar a conta, mas qualquer valor daria o mesmo resultado no final, já que são todos iguais.
+                </p>
+                <h3>
+                    Passo 2:
+                </h3>
+                <p>
+                    Divida o triângulo em 2, traçando uma linha vertical saindo de um dos vértices até o centro do lado oposto, como na imagem abaixo.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+                    <style>
+                        .label { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .angle-text { font-family: monospace, sans-serif; font-size: 12px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .side-text { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                    </style>
+
+                    <!-- TRIÂNGULO EQUILÁTERO DIVIDIDO -->
+                    <g transform="translate(250, 40)">
+                        <!-- Polígono do Triângulo Principal -->
+                        <polygon points="100,20 20,158.56 180,158.56" 
+                                fill="#ffffff" 
+                                stroke="#000000" 
+                                stroke-width="3" 
+                                stroke-linejoin="round" />
+
+                        <!-- Linha Divisória Vertical (Altura/Bissetriz) -->
+                        <line x1="100" y1="20" x2="100" y2="158.56" 
+                            stroke="#000000" stroke-width="2" stroke-dasharray="4,4" />
+
+                        <!-- Arcos dos Ângulos Superiores Divididos (30° cada) -->
+                        <path d="M 85,45.98 A 30 30 0 0 0 100,50" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <path d="M 100,50 A 30 30 0 0 0 115,45.98" fill="none" stroke="#000000" stroke-width="1.5" />
+                        
+                        <!-- Arcos dos Ângulos da Base (60°) -->
+                        <path d="M 50,158.56 A 30 30 0 0 0 35,132.58" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <path d="M 165,132.58 A 30 30 0 0 0 150,158.56" fill="none" stroke="#000000" stroke-width="1.5" />
+
+                        <!-- Indicações dos Ângulos -->
+                        <text x="88" y="65" class="angle-text">30°</text>
+                        <text x="112" y="65" class="angle-text">30°</text>
+                        <text x="58" y="146" class="angle-text">60°</text>
+                        <text x="142" y="146" class="angle-text">60°</text>
+
+                        <!-- Medida dos Lados Externos (2) -->
+                        <text x="45" y="80" class="side-text">2</text>
+                        <text x="155" y="80" class="side-text">2</text>
+
+                        <!-- Medida da Base Dividida (1 | 1) -->
+                        <text x="60" y="175" class="side-text">1</text>
+                        <text x="140" y="175" class="side-text">1</text>
+
+                        <!-- Legenda -->
+                        <text x="100" y="200" class="label">EQUILÁTERO DIVIDIDO</text>
+                    </g>
+                </svg>
+                <p>
+                    Aplicando o Teorema de Pitágoras: <br>
+                    <span>2² = 1² + b²</span> <br>
+                    <span>4 = 1 + b²</span> <br>
+                    <span>4 - 1 = b²</span> <br>
+                    <span>3 = b²</span> <br>
+                    <span>
+                        <math style="font-weight: bold;">
+                            <mfrac>
+                                <msqrt><mn>b²</mn></msqrt>
+                            </mfrac>
+                        </math></span>
+                        = 
+                        <math style="font-weight: bold;">
+                            <mfrac>
+                                <msqrt><mn>3</mn></msqrt>
+                            </mfrac>
+                        </math></span> <br>
+                    descobriremos que o tamanho dessa reta vertical que traçamos vale
+                    <math style="font-weight: bold;">
+                        <mfrac>
+                            <msqrt><mn>3</mn></msqrt>
+                        </mfrac>
+                    </math>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="100%">
+                    <style>
+                        .label { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .angle-text { font-family: monospace, sans-serif; font-size: 12px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                        .side-text { font-family: monospace, sans-serif; font-size: 15px; font-weight: bold; fill: #000000; text-anchor: middle; }
+                    </style>
+
+                    <!-- TRIÂNGULO EQUILÁTERO DIVIDIDO -->
+                    <g transform="translate(250, 40)">
+                        <!-- Polígono do Triângulo Principal -->
+                        <polygon points="100,20 20,158.56 180,158.56" 
+                                fill="#ffffff" 
+                                stroke="#000000" 
+                                stroke-width="3" 
+                                stroke-linejoin="round" />
+
+                        <!-- Linha Divisória Vertical (Altura/Bissetriz) -->
+                        <line x1="100" y1="20" x2="100" y2="158.56" 
+                            stroke="#000000" stroke-width="2" stroke-dasharray="4,4" />
+
+                        <!-- Arcos dos Ângulos Superiores Divididos (30° cada) -->
+                        <path d="M 85,45.98 A 30 30 0 0 0 100,50" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <path d="M 100,50 A 30 30 0 0 0 115,45.98" fill="none" stroke="#000000" stroke-width="1.5" />
+                        
+                        <!-- Arcos dos Ângulos da Base (60°) -->
+                        <path d="M 50,158.56 A 30 30 0 0 0 35,132.58" fill="none" stroke="#000000" stroke-width="1.5" />
+                        <path d="M 165,132.58 A 30 30 0 0 0 150,158.56" fill="none" stroke="#000000" stroke-width="1.5" />
+
+                        <!-- Indicações dos Ângulos -->
+                        <text x="88" y="65" class="angle-text">30°</text>
+                        <text x="112" y="65" class="angle-text">30°</text>
+                        <text x="58" y="146" class="angle-text">60°</text>
+                        <text x="142" y="146" class="angle-text">60°</text>
+
+                        <!-- Medida dos Lados Externos (2) -->
+                        <text x="45" y="80" class="side-text">2</text>
+                        <text x="155" y="80" class="side-text">2</text>
+
+                        <!-- Medida da Altura (√3) -->
+                        <text x="115" y="110" class="side-text">√3</text>
+
+                        <!-- Medida da Base Dividida (1 | 1) -->
+                        <text x="60" y="175" class="side-text">1</text>
+                        <text x="140" y="175" class="side-text">1</text>
+
+                        <!-- Legenda -->
+                        <text x="100" y="200" class="label">EQUILÁTERO DIVIDIDO</text>
+                    </g>
+                </svg>
+
+
+
+
             </div>
         </section>
+
+
+        <!-- <section class="topic-card">
+            
+        </section> -->
         <section class="topic-card">
             <p style="color: var(--thumb); background-color: transparent; border: 2px dashed var(--nav); padding: 5px;">PÁGINA EM EM CONSTRUÇÃO</p>
             <p class="legenda"></p>
