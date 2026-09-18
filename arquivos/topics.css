@@ -493,6 +493,7 @@ section.topic-card p {
     height: fit-content;
     font-size: 1.5em;
     border: 4px solid var(--thumb);
+    text-align: center;
 }  #table-angulos-notaveis thead th {
     padding: 15px 0px;
     text-align: center;
@@ -500,8 +501,10 @@ section.topic-card p {
     border: 2px solid var(--thumb);
     padding: 15px 0px;
     font-variant-numeric: tabular-nums;
+    text-align: center;
 } #table-angulos-notaveis td {
     font-variant-numeric: tabular-nums;
+    text-align: center;
 } #table-angulos-notaveis mfrac {
     font-size: 1.5em;
     font-weight: bold;
