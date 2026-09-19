@@ -15,7 +15,7 @@
     --black: #000;
     --icons: white;
     --color-text-footer: #000;
-    --foto: url('imagens/background/astronomy_mobile.webp');
+    /* --foto: url('imagens/background/astronomy_mobile.webp'); */
     --button: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
     --prefooter: black; 
     --prefooter-text: #969EAB;
@@ -33,7 +33,7 @@
     --black: #000;
     --icons: #FB4A9D;
     --color-text-footer: #000;
-    --foto: url('imagens/background/astronomy_mobile.webp');
+    /* --foto: url('imagens/background/astronomy_mobile.webp'); */
     --button: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
     --prefooter: black; 
     --prefooter-text: #969EAB;
@@ -50,7 +50,7 @@
     --backgroundColor: #07111D;
     --black: #07111D;
     --color-text-footer: #000;
-    --foto: url('imagens/background/nature.webp');
+    /* --foto: url('imagens/background/nature.webp'); */
     --button: linear-gradient(to bottom, white, gray);
     --prefooter: #5D5D5D;     
     --prefooter-text: white;
@@ -140,7 +140,6 @@ nav {
     text-decoration: none;
 } nav a:hover {
     color: var(--nav);
-    /* background-color: white;  */
 } nav div:not(:last-child):hover {
     background-color: white;
 }
@@ -209,7 +208,6 @@ nav {
     display: flex;
     flex-direction: column;
     height: 480px;
-    background: black var(--foto) no-repeat center scroll;
     background-size: cover;
     padding: 30px 10px;
     margin: 0px 0px 30px 0px;

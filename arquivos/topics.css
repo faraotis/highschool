@@ -393,6 +393,19 @@
     border: 5px solid var(--matematica);
 }
 
+.secPosHeader-principal {
+    background-image: url('imagens/background/astronomy_mobile.webp');
+} .secPosHeader-matematica {
+    background-image: url('imagens/background/background-matematica.webp');
+} .secPosHeader-fisica {
+    background-image: url('imagens/background/background-fisica.webp');
+} .secPosHeader-biologia {
+    background-image: url('imagens/background/background-biologia.webp');
+} .secPosHeader-quimica {
+    background-image: url('imagens/background/background-quimica.webp');
+}
+
+
 .button-ir-principal {
     background-color: white;
 } .button-ir-fisica {
