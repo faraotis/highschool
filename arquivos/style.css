@@ -370,7 +370,7 @@ footer {
     flex-flow: column nowrap;
 }
 
-#a-button {
+.button-ir {
     width: 110px;
     height: 30px;
     border-radius: 3px;
@@ -379,8 +379,8 @@ footer {
     cursor: pointer;
     font-size: 1.1em;
     font-weight: bold;
+    text-shadow: none;
     color: black;
-    background-image: var(--button);
 }
 
 #displayHora {

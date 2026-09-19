@@ -254,10 +254,9 @@
 }
 
 
-
 .header-quimica {
     background-color: var(--black);
-    border-bottom: 1px solid var(--icons);
+    border-bottom: 1px solid var(--quimica);
 } .header-quimica h1 {
     color: var(--quimica);
 } .header-quimica a {
@@ -269,9 +268,7 @@
     color: white;
 } .header-quimica nav a:hover {
     color: var(--quimica);
-    background-color: white; 
-} .header-quimica nav div:not(:last-child):hover {
-    background-color: var(--quimica);
+    background-color: white;
 } .header-quimica #box-search input {
     background-color: var(--quimica);
     border: 1px solid var(--black);
@@ -283,20 +280,17 @@
     background-color: var(--quimica);
 } .header-quimica menu {
     background-color: var(--black);
-    color: var(--quimica);
 } .header-quimica menu div {
-    color: var(--quimica);
-} .header-quimica menu div a:hover {
     color: white;
+} .header-quimica menu div a:hover {
+    color: var(--quimica);
 } .header-quimica #colorButton .color {
     color: var(--quimica);
 } .header-quimica .colorButtonMenu:hover {
     background-color: var(--quimica);
-    color: white;
 } .header-quimica .colorButtonMenu:first-child:hover {
     color: white;
 }
-
 
 
 .header-matematica {
@@ -341,37 +335,35 @@
 
 .header-biologia {
     background-color: var(--black);
-    border-bottom: 1px solid var(--icons);
+    border-bottom: 1px solid var(--biologia);
 } .header-biologia h1 {
     color: var(--biologia);
 } .header-biologia a {
     color: var(--text);
 } .header-biologia nav {
     color: white;
-    background-color: var(--nav);
+    background-color: var(--biologia);
 } .header-biologia nav a {
     color: white;
 } .header-biologia nav a:hover {
-    color: var(--nav);
-    background-color: white; 
-} .header-biologia nav div:not(:last-child):hover {
+    color: var(--biologia);
     background-color: white;
 } .header-biologia #box-search input {
-    background-color: var(--icons);
+    background-color: var(--biologia);
     border: 1px solid var(--black);
 } .header-biologia #box-search input::placeholder {
     color: var(--black);
 } .header-biologia #box-search i {
     color: var(--black);
 } .header-biologia #menu div {
-    background-color: var(--icons);
+    background-color: var(--biologia);
 } .header-biologia menu {
     background-color: var(--black);
-} .header-biologia menu a {
-    color: var(--text);
+} .header-biologia menu div {
+    color: white;
 } .header-biologia menu div a:hover {
-    color: #b3b3b3;
-} .header-biologia #colorButton {
+    color: var(--biologia);
+} .header-biologia #colorButton .color {
     color: var(--biologia);
 } .header-biologia .colorButtonMenu:hover {
     background-color: var(--biologia);
@@ -387,7 +379,6 @@
     background-color: var(--materia);
 }
 
-
 .fisica .item, .fisica .item h2 {
     background-color: var(--fisica);
     border: 5px solid var(--fisica);
@@ -400,6 +391,18 @@
 } .matematica .item, .matematica .item h2 {
     background-color: var(--matematica);
     border: 5px solid var(--matematica);
+}
+
+.button-ir-principal {
+    background-color: white;
+} .button-ir-fisica {
+    background-color: var(--fisica);
+} .button-ir-matematica {
+    background-color: white;
+} .button-ir-quimica {
+    background-color: var(--quimica);
+} .button-ir-biologia {
+    background-color: var(--biologia);
 }
 
 .fisica h1 {
