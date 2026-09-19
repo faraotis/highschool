@@ -176,6 +176,210 @@
 /* CORES DE CADA MATERIA */
 
 
+.header-principal {
+    background-color: var(--black);
+    border-bottom: 1px solid white;
+} .header-principal h1 {
+    color: white;
+} .header-principal a {
+    color: var(--text);
+} .header-principal nav {
+    color: var();
+    background-color: white;
+} .header-principal nav a {
+    color: var(--black);
+} .header-principal nav a:hover {
+    color: white;
+    background-color: var(--black);
+} .header-principal #box-search input {
+    background-color: white;
+    border: 1px solid var(--black);
+} .header-principal #box-search input::placeholder {
+    color: var(--black);
+} .header-principal #box-search i {
+    color: var(--black);
+} .header-principal #menu div {
+    background-color: white;
+} .header-principal menu {
+    background-color: var(--black);
+} .header-principal menu div {
+    color: white;
+} .header-principal menu div a:hover {
+    color: gray;
+} .header-principal #colorButton .color {
+    color: white;
+} .header-principal .colorButtonMenu:hover {
+    background-color: gray;
+} .header-principal .colorButtonMenu:first-child:hover {
+    color: white;
+}
+
+
+.header-fisica {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--fisica);
+} .header-fisica h1 {
+    color: var(--fisica);
+} .header-fisica a {
+    color: var(--text);
+} .header-fisica nav {
+    color: white;
+    background-color: var(--fisica);
+} .header-fisica nav a {
+    color: white;
+} .header-fisica nav a:hover {
+    color: var(--fisica);
+    background-color: white;
+} .header-fisica #box-search input {
+    background-color: var(--fisica);
+    border: 1px solid var(--black);
+} .header-fisica #box-search input::placeholder {
+    color: var(--black);
+} .header-fisica #box-search i {
+    color: var(--black);
+} .header-fisica #menu div {
+    background-color: var(--fisica);
+} .header-fisica menu {
+    background-color: var(--black);
+} .header-fisica menu div {
+    color: white;
+} .header-fisica menu div a:hover {
+    color: var(--fisica);
+} .header-fisica #colorButton .color {
+    color: var(--fisica);
+} .header-fisica .colorButtonMenu:hover {
+    background-color: var(--fisica);
+} .header-fisica .colorButtonMenu:first-child:hover {
+    color: white;
+}
+
+
+
+.header-quimica {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--icons);
+} .header-quimica h1 {
+    color: var(--quimica);
+} .header-quimica a {
+    color: var(--text);
+} .header-quimica nav {
+    color: white;
+    background-color: var(--quimica);
+} .header-quimica nav a {
+    color: white;
+} .header-quimica nav a:hover {
+    color: var(--quimica);
+    background-color: white; 
+} .header-quimica nav div:not(:last-child):hover {
+    background-color: var(--quimica);
+} .header-quimica #box-search input {
+    background-color: var(--quimica);
+    border: 1px solid var(--black);
+} .header-quimica #box-search input::placeholder {
+    color: var(--black);
+} .header-quimica #box-search i {
+    color: var(--black);
+} .header-quimica #menu div {
+    background-color: var(--quimica);
+} .header-quimica menu {
+    background-color: var(--black);
+    color: var(--quimica);
+} .header-quimica menu div {
+    color: var(--quimica);
+} .header-quimica menu div a:hover {
+    color: white;
+} .header-quimica #colorButton .color {
+    color: var(--quimica);
+} .header-quimica .colorButtonMenu:hover {
+    background-color: var(--quimica);
+    color: white;
+} .header-quimica .colorButtonMenu:first-child:hover {
+    color: white;
+}
+
+
+
+.header-matematica {
+    background-color: var(--matematica);
+    border-bottom: 1px solid var(--matematica);
+} .header-matematica h1 {
+    color: white;
+} .header-matematica a {
+    color: var(--text);
+} .header-matematica nav {
+    background-color: white;
+} .header-matematica nav a {
+    color: var(--matematica);
+} .header-matematica nav a:hover {
+    color: white;
+    background-color: var(--matematica); 
+} .header-matematica nav div:not(:last-child):hover {
+    background-color: white;
+} .header-matematica #box-search input {
+    background-color: white;
+    border: 1px solid var(--matematica);
+} .header-matematica #box-search input::placeholder {
+    color: var(--matematica);
+} .header-matematica #box-search i {
+    color: var(--matematica);
+} .header-matematica #menu div {
+    background-color: white;
+} .header-matematica menu {
+    background-color: var(--black);
+} .header-matematica menu div {
+    color: white;
+} .header-matematica menu div a:hover {
+    color: var(--matematica);
+} .header-matematica #colorButton .color {
+    color: white;
+} .header-matematica .colorButtonMenu:hover {
+    background-color: var(--matematica);
+} .header-matematica .colorButtonMenu:first-child:hover {
+    color: white;
+}
+
+
+.header-biologia {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--icons);
+} .header-biologia h1 {
+    color: var(--biologia);
+} .header-biologia a {
+    color: var(--text);
+} .header-biologia nav {
+    color: white;
+    background-color: var(--nav);
+} .header-biologia nav a {
+    color: white;
+} .header-biologia nav a:hover {
+    color: var(--nav);
+    background-color: white; 
+} .header-biologia nav div:not(:last-child):hover {
+    background-color: white;
+} .header-biologia #box-search input {
+    background-color: var(--icons);
+    border: 1px solid var(--black);
+} .header-biologia #box-search input::placeholder {
+    color: var(--black);
+} .header-biologia #box-search i {
+    color: var(--black);
+} .header-biologia #menu div {
+    background-color: var(--icons);
+} .header-biologia menu {
+    background-color: var(--black);
+} .header-biologia menu a {
+    color: var(--text);
+} .header-biologia menu div a:hover {
+    color: #b3b3b3;
+} .header-biologia #colorButton {
+    color: var(--biologia);
+} .header-biologia .colorButtonMenu:hover {
+    background-color: var(--biologia);
+} .header-biologia .colorButtonMenu:first-child:hover {
+    color: white;
+}
+
+
 .materia .item, .materia .item h2 {
     background-color: var(--materia);
     border: 5px solid var(--materia);

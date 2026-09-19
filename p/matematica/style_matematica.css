@@ -12,7 +12,7 @@
 } .topic-card h2 {
     color: var(--matematica);
 } .topic-card h3 {
-    color: var(--header);
+    color: var(--black);
 } .formula-box {
     background-color: #ffffff;
     border: 1px solid #bce0fd;

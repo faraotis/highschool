@@ -10,12 +10,11 @@
 
 
 :root {
-    --nav: #fb4a9d9f;
+    --nav: white;
     --backgroundColor: #FFF;
-    --header: #000;
-    --icons: #FB4A9D;
+    --black: #000;
+    --icons: white;
     --color-text-footer: #000;
-    --visit-card: #b1427670;
     --foto: url('imagens/background/astronomy_mobile.webp');
     --button: linear-gradient(to bottom, #FB4A9D, #fb4a9d9f);
     --prefooter: black; 
@@ -24,14 +23,14 @@
     --p-topic-card: #444444;
     --thumb: #969EAB;
     --fisica: #247EA6;;
-    --quimica: #b14276;
+    --quimica: #FB4A9D;
     --biologia: #388d25;
     --matematica: #1A2A3B;
     --materia: black;
 } .paleta1 {
     --nav: #fb4a9d9f;
     --backgroundColor: #FFF;
-    --header: #000;
+    --black: #000;
     --icons: #FB4A9D;
     --color-text-footer: #000;
     --foto: url('imagens/background/astronomy_mobile.webp');
@@ -49,7 +48,7 @@
     --nav: #AE2C12;
     --icons: #AE2C12;
     --backgroundColor: #07111D;
-    --header: #07111D;
+    --black: #07111D;
     --color-text-footer: #000;
     --foto: url('imagens/background/nature.webp');
     --button: linear-gradient(to bottom, white, gray);
@@ -76,7 +75,7 @@
 } .colorButtonMenu i {
     margin: 20px 0px;
 } .colorButtonMenu:hover {
-    color: var(--header);
+    color: var(--black);
     background-color: var(--icons);
 }
 
@@ -91,13 +90,10 @@ body {
 header {
     position: sticky;
     top: 0px;
-    background-color: var(--header);
-    color: var(--icons);
     height: 105px;
     padding: 15px 30px;
     font-size: 1.1em;
     z-index: 1;
-    border-bottom: 1px solid var(--icons);
     display: column;
     justify-content: space-between;
     gap: 100px;
@@ -111,7 +107,6 @@ header {
     align-items: center;
     gap: 10px;
 } header a {
-    color: var(--text);
     text-decoration: none;
 }
 
@@ -128,8 +123,6 @@ nav {
     height: 40px;
     padding: 0px 5px;
     justify-content: space-between;
-    color: white;
-    background-color: var(--nav);
     text-shadow: 1px 1px 3px #0000008b;
 } nav div {
     width: 100%;
@@ -139,7 +132,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    /* color: white; */
     font-size: 0.9em;
     text-transform: capitalize;
     font-weight: bold;
@@ -147,7 +140,7 @@ nav {
     text-decoration: none;
 } nav a:hover {
     color: var(--nav);
-    background-color: white; 
+    /* background-color: white;  */
 } nav div:not(:last-child):hover {
     background-color: white;
 }
@@ -161,16 +154,12 @@ nav {
     height: 80%;
     width: 100%;
     padding-left: 10px;
-    background-color: var(--icons);
-    border: 1px solid var(--header);
     border-radius: 10px;
 } #box-search input::placeholder {
     font-size: 1.1em;
     letter-spacing: 2px;
-    color: var(--header);
 } #box-search i {
     margin-left: -27px;
-    color: var(--header);
     text-shadow: none;
 }
 
@@ -182,7 +171,6 @@ nav {
     cursor: pointer;
 } #menu div {
     height: 2px;
-    background-color: var(--icons);
     width: 28px;
 } #menu_and_color {
     display: flex;
@@ -193,7 +181,6 @@ nav {
     transition: transform 0.3s ease;
     height: fit-content;
     width: fit-content;
-    background-color: var(--header);
     display: flex;
     flex-flow: nowrap column;
     justify-content: space-between;
@@ -206,7 +193,6 @@ nav {
     text-decoration: none;
 } menu a:hover {
     text-decoration: underline;
-    color: #b3b3b3;
 } #politcs_and_terms-menu {
     margin: 40px auto 20px auto;
     font-size: 0.4em;
@@ -343,7 +329,7 @@ nav {
 /* footer */
 footer {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--header_footer);
+    background-color: var(--black_footer);
     color: var(--color-text-footer);
     padding: 40px;
 }
