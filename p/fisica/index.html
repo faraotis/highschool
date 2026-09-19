@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8805025172415885">
-    <meta name="description" content="Estude Ciências da Natureza através de resumos!">
-    <title>Bambim | Science</title>
-    <link rel="shortcut icon" href="arquivos/imagens/icon/favicon.png" type="image/x-icon">
+    <meta name="description" content="Aprenda Física para o ENEM e vestibulares com resumos visuais e anotações feitas à mão. Conteúdo claro, prático e direto ao ponto.">
+    <title>Bambim | Física</title>
+    <link rel="shortcut icon" href="../../arquivos/imagens/icon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="arquivos/style.css">
-    <link rel="stylesheet" href="arquivos/mediaquery.css">
-    <link rel="stylesheet" href="arquivos/topics.css">
+    <link rel="stylesheet" href="../../arquivos/style.css">
+    <link rel="stylesheet" href="../../arquivos/mediaquery.css">
+    <link rel="stylesheet" href="../../arquivos/topics.css">
 </head>
 <body>
     <header id="header">
@@ -129,9 +128,6 @@
             </p>
         </div>
     </div>
-    <div id="loadcontent">
-        <!-- Load content -->
-    </div>
     <main>
         <!-- No results -->
         <span id="no_results">
@@ -141,26 +137,78 @@
             <i class="material-icons">arrow_back</i>
             Voltar
         </a>
-        
-        <div class="h1-subject materia materia-title">
-            <h1 id="materia">Matéria</h1>
+        <div id="loadcontent"></div>
+        <div class="h1-subject fisica fisica-title">
+            <h1 id="fisica">Física</h1>
         </div>
-        <div class="items materia">
-            <a href="p/matematica/" class="item matematica-foto">
+        <div class="items fisica">
+            <a href="#" onclick="carregarAula('cinematica', event)" class="item cinematica">
                 <div></div>
-                <h2 class="item-title">Matemática</h2>
+                <h2 class="item-title">Cinemática</h2>
             </a>
-            <a href="p/fisica/" class="item fisica-foto">
+            <a href="#" onclick="carregarAula('dinamica', event)" class="item dinamica">
                 <div></div>
-                <h2 class="item-title">Física</h2>
+                <h2 class="item-title">Dinâmica</h2>
             </a>
-            <a onclick="alert('Conteúdo em breve!')" class="item quimica-foto">
+            <a href="#" onclick="carregarAula('termologia', event)" class="item termologia">
                 <div></div>
-                <h2 class="item-title">Química</h2>
+                <h2 class="item-title">Termologia</h2>
             </a>
-            <a onclick="alert('Conteúdo em breve!')" class="item biologia-foto">
+            <a href="#" onclick="carregarAula('eletrodinamica', event)" class="item eletrodinamica">
                 <div></div>
-                <h2 class="item-title">Biologia</h2>
+                <h2 class="item-title">Eletrodinâmica</h2>
+            </a>
+            <a href="#" onclick="carregarAula('eletrostatica', event)" class="item eletrostatica">
+                <div></div>
+                <h2 class="item-title">Eletrostática</h2>
+            </a>
+            <a href="#" onclick="carregarAula('estatica', event)" class="item estatica">
+                <div></div>
+                <h2 class="item-title">Estática</h2>
+            </a>
+            <a href="#" onclick="carregarAula('magnetismo', event)" class="item magnetismo">
+                <div></div>
+                <h2 class="item-title">Magnetismo</h2>
+            </a>
+            <a href="#" onclick="carregarAula('ondulatoria', event)" class="item ondulatoria">
+                <div></div>
+                <h2 class="item-title">Ondulatória</h2>
+            </a>
+            <a href="#" onclick="carregarAula('optica', event)" class="item optica">
+                <div></div>
+                <h2 class="item-title">Óptica</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fisica-moderna', event)" class="item fisica-moderna">
+                <div></div>
+                <h2 class="item-title">Física Moderna</h2>
+            </a>
+            <a href="#" onclick="carregarAula('fluidos', event)" class="item fluidos">
+                <div></div>
+                <h2 class="item-title">Fluidos</h2>
+            </a>
+            <a href="#" onclick="carregarAula('gravitacao-universal', event)" class="item gravitacao-universal">
+                <div></div>
+                <h2 class="item-title">Gravitação Universal</h2>
+            </a>
+            <a href="#" onclick="carregarAula('movimento-circular', event)" class="item movimento-circular">
+                <div></div>
+                <h2 class="item-title">Movimento Circular</h2>
+            </a>
+            <a href="#" onclick="carregarAula('movimento-harmonico-simples', event)" class="item movimento-harmonico-simples">
+                <div></div>
+                <h2 class="item-title">Movimento Harmônico Simples</h2>
+            </a>
+            <a href="#" onclick="carregarAula('analise-dimensional', event)" class="item analise-dimensional">
+                <div></div>
+                <h2 class="item-title">Análise Dimensional</h2>
+            </a>
+            <a href="#" onclick="carregarAula('quantidade-de-movimento', event)" class="item quantidade-de-movimento">
+                <div></div>
+                <h2 class="item-title">Quantidade de Movimento</h2>
+            </a>
+            <a href="#" onclick="carregarAula('trabalho-e-energia', event)" class="item trabalho-e-energia">
+                <div></div>
+                <h2 class="item-title">Trabalho e Energia</h2>
             </a>
         </div>
     </main>
@@ -175,16 +223,16 @@
                 </div>
                 <div id="icones-redes">
                     <a href="https://www.instagram.com/alvs_ismael/" target="_blank">
-                        <img src="arquivos/imagens/redes/icone-insta.png" alt="instagram">
+                        <img src="../../arquivos/imagens/redes/icone-insta.png" alt="instagram">
                     </a>
                     <a onclick="alert('No momento, apenas o Instagram está disponível!')">
-                        <img src="arquivos/imagens/redes/icone-yt.png" alt="youtube">
+                        <img src="../../arquivos/imagens/redes/icone-yt.png" alt="youtube">
                     </a>
                     <a onclick="alert('No momento, apenas o Instagram está disponível!')">
-                        <img src="arquivos/imagens/redes/icone-face.png" alt="facebook">
+                        <img src="../../arquivos/imagens/redes/icone-face.png" alt="facebook">
                     </a>
                     <a onclick="alert('No momento, apenas o Instagram está disponível!')">
-                        <img src="arquivos/imagens/redes/icone-twi.png" alt="X/twitter">
+                        <img src="../../arquivos/imagens/redes/icone-twi.png" alt="X/twitter">
                     </a>
                 </div>
             </div>
@@ -193,12 +241,12 @@
             </div>
             <div id="politicas_e_termos_div">
                 <div>
-                    <a href="p/politicadeprivacidade.html">
+                    <a href="../politicadeprivacidade.html">
                         políticas de privacidade
                     </a>
                 </div>
                 <div>
-                    <a href="p/termosdeuso.html">
+                    <a href="../termosdeuso.html">
                         termos de uso
                     </a>
                 </div>
@@ -228,7 +276,6 @@
     <div id="bgFooterBottom">
         <!--Cor nas CSS-->
     </div>
-    <script src="arquivos/scripts.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8805025172415885" crossorigin="anonymous"></script>
+    <script src="../../arquivos/scripts.js"></script>
 </body>
 </html>

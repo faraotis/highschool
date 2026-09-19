@@ -152,7 +152,7 @@ function carregarAula(caminhoAula, event) {
     const container = document.getElementById('loadcontent')
     container.innerHTML = '<p style="padding: 20px; text-align: center;">Carregando...</p>'
 
-    fetch(`p/${caminhoAula}.html`)
+    fetch(`${caminhoAula}.html`)
         .then(response => {
         if (!response.ok) {
             throw new Error('Erro ao carregar o arquivo')

@@ -176,6 +176,14 @@
 /* CORES DE CADA MATERIA */
 
 
+.materia .item, .materia .item h2 {
+    background-color: var(--materia);
+    border: 5px solid var(--materia);
+} .materia-title {
+    background-color: var(--materia);
+}
+
+
 .fisica .item, .fisica .item h2 {
     background-color: var(--fisica);
     border: 5px solid var(--fisica);
@@ -200,12 +208,22 @@
     background-color: var(--matematica);
 }
 
-/* 
+/* =============== IMAGENS DE CADA TÓPICO ===============*/
 
-FISICA 
-Imagens de cada tópico 
+/* MATÉRIA */
 
-*/
+
+.matematica-foto {
+    background-image: url('imagens/matematica/probabilidade.webp');
+} .fisica-foto {
+    background-image: url('imagens/fisica/optica.webp');
+} .biologia-foto {
+    background-image: url('imagens/biologia/fisiologia-humana.webp');
+} .quimica-foto {
+    background-image: url('imagens/quimica/solucoes.webp');
+}
+
+/* FISICA */
 
 
 .cinematica {
@@ -245,12 +263,7 @@ Imagens de cada tópico
 }
 
 
-/* 
-
-QUIMICA
-Imagens de cada tópico 
-
-*/
+/* QUIMICA*/
 
 .atomos {
     background-image: url('imagens/quimica/atomos.webp');
@@ -302,12 +315,7 @@ Imagens de cada tópico
     background-image: url('imagens/quimica/termoquimica.webp');
 }
 
-/* 
-
-BIOLOGIA
-Imagens de cada tópico 
-
-*/
+/* BIOLOGIA*/
 
 
 
@@ -353,12 +361,7 @@ Imagens de cada tópico
     background-image: url('imagens/biologia/zoologia.webp');
 }
 
-/* 
-
-MATEMATICA
-Imagens de cada tópico 
-
-*/
+/* MATEMATICA */
 
 
 .analise-combinatoria {
